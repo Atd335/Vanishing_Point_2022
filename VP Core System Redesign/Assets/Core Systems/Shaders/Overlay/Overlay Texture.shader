@@ -6,6 +6,11 @@ Shader "Vanishing_Point/OverlayTextureShader"
         _OverlayTexture_1("OverlayTexture 1", 2D) = "white" {}
         _OverlayTexture_2("OverlayTexture 2", 2D) = "white" {}
         _OverlayTexture_3("OverlayTexture 3", 2D) = "white" {}
+
+        _OverlayColor_1("Overlay Color 1", Color) = (1,1,1,1)
+        _OverlayColor_2("Overlay Color 2", Color) = (1,1,1,1)
+        _OverlayColor_3("Overlay Color 3", Color) = (1,1,1,1)
+
         _DetectColor_1("Detect Color 1", Color) = (1,1,1,1)
         _DetectColor_2("Detect Color 2", Color) = (1,1,1,1)
         _DetectColor_3("Detect Color 3", Color) = (1,1,1,1)
@@ -48,6 +53,10 @@ Shader "Vanishing_Point/OverlayTextureShader"
             sampler2D _OverlayTexture_2;
             sampler2D _OverlayTexture_3;
 
+            fixed4 _OverlayColor_1;
+            fixed4 _OverlayColor_2;
+            fixed4 _OverlayColor_3;
+
             fixed4 _DetectColor_1;
             fixed4 _DetectColor_2;
             fixed4 _DetectColor_3;
@@ -78,9 +87,9 @@ Shader "Vanishing_Point/OverlayTextureShader"
 
                 if (f != 1) { col.rgb = 1; }
 
-                if (ov1) { col = col * ovTex_1; }
-                if (ov2) { col = col * ovTex_2; }
-                if (ov3) { col = col * ovTex_3; }
+                if (ov1) { col = _OverlayColor_1 * ovTex_1; }
+                if (ov2) { col = _OverlayColor_2  * ovTex_2; }
+                if (ov3) { col = _OverlayColor_3  * ovTex_3; }
                 if (!ov2 && !ov1 && !ov3) { col.a = 0; }
 
                 return col;

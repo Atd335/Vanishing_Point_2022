@@ -56,7 +56,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _colorGradient:
-        m_Texture: {fileID: 2800000, guid: 9e1dc1e1ffd827840a77bc6388cdaafc, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1e5a8e58d46b2b748b7fc59cbd170241, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ditherPattern:
@@ -80,9 +80,17 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - _threshold: 0.5
+    - _brightness: -0.06
+    - _contrast: 2.5
+    - _ditherIntensity: 0.38
+    - _ditherResolution: 1.19
+    - _intensity: 0.0014
+    - _saturation: 0.506
+    - _scale: 51.8
+    - _speed: 3.12
+    - _threshold: -0.5
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _colorScreen: {r: 1, g: 1, b: 1, a: 1}
+    - _colorScreen: {r: 0.18358847, g: 0.254717, b: 0.24110734, a: 1}
   m_BuildTextureStacks: []
