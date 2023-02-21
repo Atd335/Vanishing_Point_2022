@@ -18,4 +18,22 @@ public class TimedEvent : MonoBehaviour
         timedEvent.Invoke();
     }
 
+    public void playSound(AudioClip clip)
+    {
+        if (!GetComponent<AudioListener>())
+        {
+            this.gameObject.AddComponent<AudioListener>();
+        }
+
+
+        if (!GetComponent<AudioSource>())
+        {
+            this.gameObject.AddComponent<AudioSource>();
+        }
+
+        GetComponent<AudioSource>().PlayOneShot(clip);
+        
+
+    }
+
 }

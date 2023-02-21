@@ -1,1 +1,1 @@
-Press 'WASD' to move around!
+Press 'WASD' to move, and Mouse to Look around!

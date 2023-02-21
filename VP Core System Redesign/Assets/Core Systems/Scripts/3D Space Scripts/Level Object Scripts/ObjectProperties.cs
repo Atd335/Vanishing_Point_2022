@@ -35,4 +35,11 @@ public class ObjectProperties : MonoBehaviour
     {
         GetComponent<Outline>().enabled = b;   
     }
+
+    public void makeFlat()
+    {
+        Material m = new Material(Shader.Find("Unlit/Color"));
+        m.color = color_3D;
+        GetComponent<Renderer>().material = m;
+    }
 }

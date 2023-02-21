@@ -23,6 +23,10 @@ TagManager:
   - Pause Canvas
   - SceneFade
   - HighlightTextures
+  - testTag
+  - TaskBar
+  - TabContainer
+  - BIOSCanvas
   layers:
   - Default
   - TransparentFX
@@ -32,7 +36,7 @@ TagManager:
   - UI
   - 2D Objects
   - Don't interact with 2D
-  - 
+  - Ignore Projection
   - 
   - 
   - 

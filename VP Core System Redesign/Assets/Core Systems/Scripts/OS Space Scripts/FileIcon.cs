@@ -8,14 +8,22 @@ public class FileIcon : ScriptableObject
     public OsFileType fileType;
 
     public Sprite icon;
+    public Sprite[] glitchedIcons;
     public bool isLocked = false;
+    public bool openWindowOnStart = false;
     public bool limitToOneInstance = true;
+    public bool autoPlace;
+    public bool glitchIcon = false;
+    public bool islevelPortal = false;
     public GameObject window;
+    public GameObject errorWindow;
     public Object content;
 
     public Vector2 positionOverride = new Vector2(-1,-1);
     public Vector2 windowPosition = new Vector2(100,100);
     public Vector2 windowScale = new Vector2(500,500);
+
+    public int level = -1;
 
     private void OnValidate()
     {

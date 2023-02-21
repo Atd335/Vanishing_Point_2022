@@ -10,6 +10,7 @@ public class CharacterController2D : MonoBehaviour
     ImageCapture ic;
     RawImageCapture raw;
     ModeSwitcher switcher;
+    CharacterController3D cc3d;
 
     public Vector2Int playerPosition;
     public Vector2 playerPositionFloat;
@@ -45,6 +46,7 @@ public class CharacterController2D : MonoBehaviour
     public bool isOnScreen;
     public bool jumping;
 
+    bool isMovementBlocked = false;
     bool killFromOuchie;
 
     Camera visualCamera;
@@ -57,6 +59,7 @@ public class CharacterController2D : MonoBehaviour
         ic = UpdateDriver.ud.GetComponent<ImageCapture>();
         raw = UpdateDriver.ud.GetComponent<ImageCapture>().raw;
         switcher = UpdateDriver.ud.GetComponent<ModeSwitcher>();
+        cc3d = UpdateDriver.ud.GetComponent<CharacterController3D>();
 
         visualCamera = GameObject.FindGameObjectWithTag("Visual Camera").GetComponent<Camera>();
 
@@ -98,16 +101,19 @@ public class CharacterController2D : MonoBehaviour
 
         if (ic.texture == null) { return; }
 
-        movePlayer();
+        if (!isMovementBlocked)
+        {
+            movePlayer();
 
-        playerPosition = CharacterController2D.Vector2IntFromVector3(playerPositionFloat);
-        playerRectTransform.anchoredPosition = playerPosition;
-        raw.capturePos = new Vector2Int(playerPosition.x - (raw.captureDimensions.x/2), playerPosition.y - (raw.captureDimensions.y / 2));
+            playerPosition = CharacterController2D.Vector2IntFromVector3(playerPositionFloat);
+            playerRectTransform.anchoredPosition = playerPosition;
+            raw.capturePos = new Vector2Int(playerPosition.x - (raw.captureDimensions.x / 2), playerPosition.y - (raw.captureDimensions.y / 2));
 
-        //set 3d position in space
-        cast3DPoint();
+            //set 3d position in space
+            cast3DPoint();
 
-        killConditions();
+            killConditions();
+        }
 
         Destroy(ic.texture);//SUPER SUPER IMPORTANT FOR PERFORMANCE
     }
@@ -293,6 +299,14 @@ public class CharacterController2D : MonoBehaviour
     {
         worldPosition = respawnPosition;
 
+        StartCoroutine(DeathAnimation());
+        
+        onDie.Invoke();
+        print($"2D Character died from '{str}'.");
+    }
+
+    void switchModeto3D()
+    {
         if (switcher.force2DMode)
         {
             inactiveMode();
@@ -300,12 +314,35 @@ public class CharacterController2D : MonoBehaviour
         else
         {
             switcher.toggleMode(true);
+            
         }
+    }
 
-        
+    IEnumerator DeathAnimation()
+    {
+        isMovementBlocked = true;
+        cameraShake(.1f,.25f);
+        yield return new WaitForSeconds(.25f);
+        switchModeto3D();
+        isMovementBlocked = false;
+    }
 
-        onDie.Invoke();
-        print($"2D Character died from '{str}'.");
+    public void cameraShake(float duration = .1f, float magnitude = .1f)
+    {
+        StartCoroutine(cameraShakeEnum(duration, magnitude));
+    }
+
+    IEnumerator cameraShakeEnum(float duration = .1f, float magnitude = .1f)
+    {
+        float timer = 0;
+        while (timer < 1)
+        {
+            timer += Time.deltaTime / duration;
+            visualCamera.transform.localPosition = new Vector3(Random.Range(-magnitude, magnitude), Random.Range(-magnitude, magnitude), Random.Range(-magnitude, magnitude));
+            timer = Mathf.Clamp(timer, 0, 1);
+            yield return new WaitForSeconds(Time.deltaTime);
+        }
+        visualCamera.transform.localPosition = new Vector3(0, 0, 0);
     }
 
     //converts vector3 and vector 2 into vector2 int

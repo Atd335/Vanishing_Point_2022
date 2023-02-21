@@ -24,6 +24,7 @@ public class CharacterController3D : MonoBehaviour
     public Transform head;
     public Transform headmast;
 
+    public bool blockMovement;
     bool inputToggle;
 
 	public void _Start()
@@ -41,6 +42,8 @@ public class CharacterController3D : MonoBehaviour
     }
     public void _Update()
     {
+        if (blockMovement) { return; }
+
         if (!switcher.firstPerson)
         {
             inputToggle = true;
@@ -97,6 +100,15 @@ public class CharacterController3D : MonoBehaviour
         CC.Move(moveDirection * playerSpd * Time.deltaTime);
     }
 
+    public void resetHeadPos()
+    {
+        head.localPosition = new Vector3(0,0.75f,0); 
+    }
+
+    public void toggleBlockMovement(bool b)
+    {
+        blockMovement = b;
+    }
 
     public void InterpolateCharacterToPosition(Vector3 pos, float spd = 5)
     {
@@ -165,5 +177,4 @@ public class CharacterController3D : MonoBehaviour
             yield return new WaitForSeconds(Time.deltaTime);
         }
     }
-
 }
