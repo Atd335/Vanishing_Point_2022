@@ -123,330 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &103985712
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 103985713}
-  - component: {fileID: 103985716}
-  - component: {fileID: 103985715}
-  - component: {fileID: 103985714}
-  m_Layer: 5
-  m_Name: Brent Profile Image ***BACKUP***
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &103985713
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 103985712}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1412509490}
-  m_Father: {fileID: 2098144145}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 10}
-  m_SizeDelta: {x: 250, y: 250}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &103985714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 103985712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cefad9c8607c8ef4d8a71294fb191436, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-  hoveredColor: {r: 1, g: 1, b: 1, a: 1}
-  clickedColor: {r: 1, g: 1, b: 1, a: 1}
-  colorLerpSpeed: 100
-  clickEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 103985714}
-        m_TargetAssemblyTypeName: OSButtonScript, Assembly-CSharp
-        m_MethodName: setScale
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0.95
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 226476268}
-        m_TargetAssemblyTypeName: FadeControllerScript, Assembly-CSharp
-        m_MethodName: setOpaqueColor
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 0,0,0,1
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 226476268}
-        m_TargetAssemblyTypeName: FadeControllerScript, Assembly-CSharp
-        m_MethodName: setTransparentColor
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 0,0,0,0
-          m_BoolArgument: 0
-        m_CallState: 2
-  releaseEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1240132588}
-        m_TargetAssemblyTypeName: SceneLoaderEasy, Assembly-CSharp
-        m_MethodName: setScene
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 226476268}
-        m_TargetAssemblyTypeName: FadeControllerScript, Assembly-CSharp
-        m_MethodName: fadeToOpaque
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0.1
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1523225252}
-        m_TargetAssemblyTypeName: DesktopLists, Assembly-CSharp
-        m_MethodName: setDesktopToLoad
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 4445dd847545e1c4395564ee333f7676, type: 2}
-          m_ObjectArgumentAssemblyTypeName: FileList, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  hoveredEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 103985714}
-        m_TargetAssemblyTypeName: OSButtonScript, Assembly-CSharp
-        m_MethodName: LerpToScale
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 255,255,1000
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 103985714}
-        m_TargetAssemblyTypeName: OSButtonScript, Assembly-CSharp
-        m_MethodName: setGlowOpacity
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 1
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 103985714}
-        m_TargetAssemblyTypeName: OSButtonScript, Assembly-CSharp
-        m_MethodName: LerpImageTransparent
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2098144146}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 103985714}
-        m_TargetAssemblyTypeName: OSButtonScript, Assembly-CSharp
-        m_MethodName: setTextLerpOpacity
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 1
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 103985714}
-        m_TargetAssemblyTypeName: OSButtonScript, Assembly-CSharp
-        m_MethodName: setTextLerpSpd
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 35
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 103985714}
-        m_TargetAssemblyTypeName: OSButtonScript, Assembly-CSharp
-        m_MethodName: lerpTextColor
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2040143476}
-          m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  notHoveredEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 103985714}
-        m_TargetAssemblyTypeName: OSButtonScript, Assembly-CSharp
-        m_MethodName: LerpToScale
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 250,250,1000
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 103985714}
-        m_TargetAssemblyTypeName: OSButtonScript, Assembly-CSharp
-        m_MethodName: setGlowOpacity
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 103985714}
-        m_TargetAssemblyTypeName: OSButtonScript, Assembly-CSharp
-        m_MethodName: LerpImageTransparent
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2098144146}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 103985714}
-        m_TargetAssemblyTypeName: OSButtonScript, Assembly-CSharp
-        m_MethodName: setTextLerpOpacity
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 103985714}
-        m_TargetAssemblyTypeName: OSButtonScript, Assembly-CSharp
-        m_MethodName: setTextLerpSpd
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 35
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 103985714}
-        m_TargetAssemblyTypeName: OSButtonScript, Assembly-CSharp
-        m_MethodName: lerpTextColor
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2040143476}
-          m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  swappedSprite: {fileID: 0}
-  calculator: {fileID: 0}
-  optionalSetText: {fileID: 0}
---- !u!114 &103985715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 103985712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3f2a9596a7c57d64fb52e503dda1c9b3, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &103985716
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 103985712}
-  m_CullTransparentMesh: 1
 --- !u!1 &159321446
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,7 +254,7 @@ RectTransform:
   m_Children:
   - {fileID: 1877856966}
   m_Father: {fileID: 2098144145}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -612,7 +288,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  VideoDurationInSeconds: 4
+  VideoDurationInSeconds: 8
+  fadeTime: 1
 --- !u!1 &190340382
 GameObject:
   m_ObjectHideFlags: 0
@@ -730,7 +407,7 @@ RectTransform:
   m_Children:
   - {fileID: 190340383}
   m_Father: {fileID: 2098144145}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -1133,7 +810,7 @@ GameObject:
   - component: {fileID: 1186989437}
   - component: {fileID: 1186989439}
   m_Layer: 5
-  m_Name: Brent Profile Image
+  m_Name: ELOISE Profile Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1179,7 +856,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3f2a9596a7c57d64fb52e503dda1c9b3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e8f06bfe39a6d9d4dac74c90631748d8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1682,81 +1359,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380248585}
   m_CullTransparentMesh: 1
---- !u!1 &1412509489
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1412509490}
-  - component: {fileID: 1412509492}
-  - component: {fileID: 1412509491}
-  m_Layer: 5
-  m_Name: Border
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1412509490
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1412509489}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 103985713}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1412509491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1412509489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 048853852dab29d45b2ba118a48237d9, type: 3}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1412509492
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1412509489}
-  m_CullTransparentMesh: 1
 --- !u!1 &1523225250
 GameObject:
   m_ObjectHideFlags: 0
@@ -2174,7 +1776,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877856965}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: dbcc5dd5de9c2e444a278b8a5f885ea5, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: ae3834f286c16ed4c823510e53b5a6c0, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -2289,7 +1891,7 @@ GameObject:
   - component: {fileID: 2040143477}
   - component: {fileID: 2040143476}
   m_Layer: 5
-  m_Name: Brent Text
+  m_Name: ELOISE Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2334,7 +1936,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Brent Watters
+  m_text: 'Eloise Watters
 
     <size=30>click to login</size>'
   m_isRightToLeft: 0
@@ -2684,7 +2286,7 @@ GameObject:
   - component: {fileID: 2098144147}
   - component: {fileID: 2098144146}
   m_Layer: 5
-  m_Name: BRENT
+  m_Name: ELOISE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2703,7 +2305,6 @@ RectTransform:
   m_Children:
   - {fileID: 2040143475}
   - {fileID: 1186989436}
-  - {fileID: 103985713}
   - {fileID: 177418832}
   - {fileID: 451183475}
   m_Father: {fileID: 1059805822}

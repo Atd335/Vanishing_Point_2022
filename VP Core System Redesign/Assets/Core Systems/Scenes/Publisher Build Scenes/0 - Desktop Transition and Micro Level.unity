@@ -4129,11 +4129,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8372607726834894524, guid: ee9823b670bc3064f847a6306cd37268, type: 3}
       propertyPath: colliderEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
-      value: -7.5,.74,-1.995,1
+      value: -7.5,.74,-1.995,3
       objectReference: {fileID: 0}
     - target: {fileID: 8372607726834894524, guid: ee9823b670bc3064f847a6306cd37268, type: 3}
       propertyPath: colliderEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
-      value: 0,180,0,1
+      value: 0,180,0,3
       objectReference: {fileID: 0}
     - target: {fileID: 8372607726834894524, guid: ee9823b670bc3064f847a6306cd37268, type: 3}
       propertyPath: colliderEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_StringArgument

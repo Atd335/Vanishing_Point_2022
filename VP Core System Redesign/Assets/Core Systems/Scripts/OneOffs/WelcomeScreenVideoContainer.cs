@@ -16,11 +16,14 @@ public class WelcomeScreenVideoContainer : MonoBehaviour
     public UnityEvent onVideoFinish;
     public float VideoDurationInSeconds;
     VideoPlayer VP;
+
+    public float fadeTime = 3;
+
     void Update()
     {
 
 
-        timer += Time.deltaTime / 3;
+        timer += Time.deltaTime / fadeTime;
         timer = Mathf.Clamp(timer,0,1);
         GetComponentInChildren<RawImage>().color = Color.Lerp(Color.clear, Color.white, timer);
 
