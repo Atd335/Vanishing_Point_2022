@@ -81,12 +81,12 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     - _brightness: -0.06
-    - _contrast: 1.83
-    - _ditherIntensity: 0.397
+    - _contrast: 1.5
+    - _ditherIntensity: 0.36
     - _ditherResolution: 1
-    - _intensity: 0.0014
+    - _intensity: 0.001
     - _saturation: 0.531
-    - _scale: 49
+    - _scale: 60
     - _speed: 3.12
     - _threshold: -0.5
     m_Colors:
