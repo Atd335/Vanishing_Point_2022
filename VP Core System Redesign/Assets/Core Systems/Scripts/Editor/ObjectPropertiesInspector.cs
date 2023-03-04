@@ -29,6 +29,13 @@ public class ObjectPropertiesInspector : Editor
             }
         }
 
+        if (GUILayout.Button("Make Flat"))
+        {
+            foreach (ObjectProperties obj in targets)
+            {
+                obj.makeFlat();
+            }
+        }
 
         if (GUILayout.Button("Make Platform"))
         {

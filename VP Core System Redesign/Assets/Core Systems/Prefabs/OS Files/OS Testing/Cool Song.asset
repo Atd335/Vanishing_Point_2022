@@ -15,11 +15,18 @@ MonoBehaviour:
   name: Cool Song
   extension: .aud
   fileType: 1
-  icon: {fileID: 21300000, guid: 2e3f0807a25228e4080bbeed6604c79b, type: 3}
+  icon: {fileID: -2695285320802911687, guid: 85de1879123d63d4f9c967f783107c5f, type: 3}
+  glitchedIcons: []
   isLocked: 0
+  openWindowOnStart: 0
   limitToOneInstance: 1
+  autoPlace: 1
+  glitchIcon: 0
+  islevelPortal: 0
   window: {fileID: 806539659856732665, guid: 8ee67077bebcc264c97354f18947a7f3, type: 3}
+  errorWindow: {fileID: 0}
   content: {fileID: 8300000, guid: 34e395f60ce676e4fb4f23a62e7e1be3, type: 3}
   positionOverride: {x: 75, y: -375}
-  windowPosition: {x: 50, y: 1030}
+  windowPosition: {x: 15, y: 265}
   windowScale: {x: 550, y: 200}
+  level: -1

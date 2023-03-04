@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a56daaa5158de1a479e146d8c43d9f5d, type: 3}
+  m_Name: Slide Level 2
+  m_EditorClassIdentifier: 
+  name: Slide Level 2
+  extension: .3dv
+  fileType: 4
+  icon: {fileID: 7613397246634860018, guid: 85de1879123d63d4f9c967f783107c5f, type: 3}
+  glitchedIcons:
+  - {fileID: 21300000, guid: 58ac6b8fdf2e8d743ba64a99c7ca42cc, type: 3}
+  - {fileID: 21300000, guid: d8009b775b52d1449821e3bd33db0f10, type: 3}
+  - {fileID: 21300000, guid: ca039c99c739b1342b22ad0a8cbb9378, type: 3}
+  isLocked: 0
+  openWindowOnStart: 0
+  limitToOneInstance: 1
+  autoPlace: 0
+  glitchIcon: 1
+  islevelPortal: 1
+  window: {fileID: 806539659856732665, guid: d589c04184eaa294f8e2f1760a15ad6d, type: 3}
+  errorWindow: {fileID: 806539659856732665, guid: 755d556ebd322dc4aba49ef289566304, type: 3}
+  content: {fileID: 6620732395527351659, guid: fca8aa987175b0e4fad7207630ae3322, type: 3}
+  positionOverride: {x: 195, y: -75}
+  windowPosition: {x: 50, y: 1030}
+  windowScale: {x: 500, y: 500}
+  level: 6

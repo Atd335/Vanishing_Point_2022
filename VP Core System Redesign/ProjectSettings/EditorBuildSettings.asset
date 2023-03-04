@@ -6,6 +6,25 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Core Systems/Scenes/Andrew/Weird tests/ScreenGrabIntro/EmptyScreenShot.unity
-    guid: e232914b56f962041b4d973440568777
+    path: Assets/Core Systems/Scenes/Publisher Build Scenes/0 - Desktop Transition
+      and Micro Level.unity
+    guid: c6f11e34c34f0cb46afd2b976a5a1378
+  - enabled: 1
+    path: Assets/Core Systems/Scenes/Publisher Build Scenes/1 - User Select.unity
+    guid: 1766c5f7963b73346b2142ac3de1288b
+  - enabled: 1
+    path: Assets/Core Systems/Scenes/Publisher Build Scenes/2 - Tutorial.unity
+    guid: 5b97c94d66029e145b8ac2ba48cee432
+  - enabled: 1
+    path: Assets/Core Systems/Scenes/Publisher Build Scenes/3 - OS v1.unity
+    guid: 7ce94ccbe11828e4cbda38c63c8d2538
+  - enabled: 1
+    path: Assets/Core Systems/Scenes/Publisher Build Scenes/4 - Office Level.unity
+    guid: ce7b5429ca3a11d43b822e7078f87f94
+  - enabled: 1
+    path: Assets/Core Systems/Scenes/Publisher Build Scenes/5 - OS v2.unity
+    guid: 2f933d35eb6151842a477a55e88022eb
+  - enabled: 1
+    path: Assets/Core Systems/Scenes/Publisher Build Scenes/6 - Slide Level Example.unity
+    guid: ea76b83cdfdf8d34290c9c7f2aeeb8d0
   m_configObjects: {}

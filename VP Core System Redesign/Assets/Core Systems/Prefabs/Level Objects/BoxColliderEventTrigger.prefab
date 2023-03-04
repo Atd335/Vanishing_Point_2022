@@ -62,3 +62,4 @@ MonoBehaviour:
   colliderEvent:
     m_PersistentCalls:
       m_Calls: []
+  canRunEvent: 1

@@ -22,9 +22,11 @@ public class BaseWindowController : MonoBehaviour
 
     public bool resizable = false;
     public bool consistentRatio = false;
+    public bool alwaysOnTop;
     bool TopHighlighted;
     bool ResizeHighlighted;
 
+    public AudioClip startUpSound;
 
 
     // Start is called before the first frame update
@@ -40,6 +42,12 @@ public class BaseWindowController : MonoBehaviour
         resizeCollider.SetActive(resizable);
         resizeGraphic.SetActive(resizable);
         setToTop();
+
+        if (startUpSound)
+        {
+            this.gameObject.AddComponent<AudioSource>();
+            GetComponent<AudioSource>().PlayOneShot(startUpSound);
+        }
     }
 
     void onClick()
@@ -119,7 +127,7 @@ public class BaseWindowController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (alwaysOnTop) { transform.SetAsLastSibling(); }
     }
 
 

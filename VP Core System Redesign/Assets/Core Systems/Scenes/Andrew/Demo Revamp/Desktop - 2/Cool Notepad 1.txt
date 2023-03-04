@@ -1,0 +1,2 @@
+This is the Final OS scene.
+Open the folder in the top right and double-click the files in it to view the 'slide-level' placeholders.
