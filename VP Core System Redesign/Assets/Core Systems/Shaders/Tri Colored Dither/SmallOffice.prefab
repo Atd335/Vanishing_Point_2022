@@ -98,7 +98,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f9c3179a48e3c0a4b8f9b06e5a7bbe74, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -147,7 +147,7 @@ PrefabInstance:
     - target: {fileID: 4526023425180779211, guid: 41c1fc27ba65bac4e922bd7e883a4ff1, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f9c3179a48e3c0a4b8f9b06e5a7bbe74, type: 2}
+      objectReference: {fileID: 2100000, guid: 29ce8201eec58b94d91d8728adf5825b, type: 2}
     - target: {fileID: 6044866382076007864, guid: 41c1fc27ba65bac4e922bd7e883a4ff1, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -277,7 +277,7 @@ PrefabInstance:
     - target: {fileID: 6704280854991755464, guid: 32558a98a59edd840a8ae87c1e2bfbf7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f9c3179a48e3c0a4b8f9b06e5a7bbe74, type: 2}
+      objectReference: {fileID: 2100000, guid: 29ce8201eec58b94d91d8728adf5825b, type: 2}
     - target: {fileID: 8838069500676094670, guid: 32558a98a59edd840a8ae87c1e2bfbf7, type: 3}
       propertyPath: m_Name
       value: Desk Chair
@@ -359,7 +359,7 @@ PrefabInstance:
     - target: {fileID: 9133568388930182506, guid: 071033f8fb62445479ab383f4aa711da, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f9c3179a48e3c0a4b8f9b06e5a7bbe74, type: 2}
+      objectReference: {fileID: 2100000, guid: 29ce8201eec58b94d91d8728adf5825b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 071033f8fb62445479ab383f4aa711da, type: 3}
 --- !u!4 &2955910414635824878 stripped
@@ -449,7 +449,7 @@ PrefabInstance:
     - target: {fileID: 9133568388930182506, guid: 071033f8fb62445479ab383f4aa711da, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f9c3179a48e3c0a4b8f9b06e5a7bbe74, type: 2}
+      objectReference: {fileID: 2100000, guid: 29ce8201eec58b94d91d8728adf5825b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 071033f8fb62445479ab383f4aa711da, type: 3}
 --- !u!4 &2955910414701162640 stripped
@@ -467,7 +467,7 @@ PrefabInstance:
     - target: {fileID: 2665405078544542682, guid: ad749d2572a45df4a8de2b408170246a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f9c3179a48e3c0a4b8f9b06e5a7bbe74, type: 2}
+      objectReference: {fileID: 2100000, guid: 29ce8201eec58b94d91d8728adf5825b, type: 2}
     - target: {fileID: 6942365965233720734, guid: ad749d2572a45df4a8de2b408170246a, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -601,7 +601,7 @@ PrefabInstance:
     - target: {fileID: 6704280854991755464, guid: 32558a98a59edd840a8ae87c1e2bfbf7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f9c3179a48e3c0a4b8f9b06e5a7bbe74, type: 2}
+      objectReference: {fileID: 2100000, guid: 29ce8201eec58b94d91d8728adf5825b, type: 2}
     - target: {fileID: 8838069500676094670, guid: 32558a98a59edd840a8ae87c1e2bfbf7, type: 3}
       propertyPath: m_Name
       value: Desk Chair (1)
@@ -627,7 +627,7 @@ PrefabInstance:
     - target: {fileID: 6738745047588363201, guid: f8d444751be49464093a35f482463c4b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f9c3179a48e3c0a4b8f9b06e5a7bbe74, type: 2}
+      objectReference: {fileID: 2100000, guid: 29ce8201eec58b94d91d8728adf5825b, type: 2}
     - target: {fileID: 8159251696165088466, guid: f8d444751be49464093a35f482463c4b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -705,7 +705,7 @@ PrefabInstance:
     - target: {fileID: 2665405078544542682, guid: ad749d2572a45df4a8de2b408170246a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f9c3179a48e3c0a4b8f9b06e5a7bbe74, type: 2}
+      objectReference: {fileID: 2100000, guid: 29ce8201eec58b94d91d8728adf5825b, type: 2}
     - target: {fileID: 2665405078544542682, guid: ad749d2572a45df4a8de2b408170246a, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
