@@ -88,6 +88,7 @@ Shader "Vanishing_Point/OverlayTextureShader"
                 if (f != 1) { col.rgb = 1; }
 
                 if (ov1) { col = _OverlayColor_1 * ovTex_1; }
+                if (ov1) {col = (_OverlayColor_1 <= 0.5) ? 2 * _OverlayColor_1 * ovTex_1 : 1 - 2 * (1 - _OverlayColor_1) * (1 - ovTex_1); }
                 if (ov2) { col = _OverlayColor_2  * ovTex_2; }
                 if (ov3) { col = _OverlayColor_3  * ovTex_3; }
                 if (!ov2 && !ov1 && !ov3) { col.a = 0; }
