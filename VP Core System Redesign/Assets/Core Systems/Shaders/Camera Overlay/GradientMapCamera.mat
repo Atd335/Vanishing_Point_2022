@@ -87,7 +87,7 @@ Material:
     - _intensity: 0.001
     - _saturation: 0.169
     - _scale: 54.8
-    - _speed: 4
+    - _speed: 0.71
     - _threshold: -0.5
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
