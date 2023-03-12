@@ -52,7 +52,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OverlayTexture_1:
-        m_Texture: {fileID: 2800000, guid: 6546c792bb0892841b8a111bba0831a2, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7ba5775dfb0706244a156063cdbf1d09, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OverlayTexture_2:
@@ -60,7 +60,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OverlayTexture_3:
-        m_Texture: {fileID: 2800000, guid: b8e8e20ba09ceeb499436120ae291a9b, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
@@ -94,7 +94,7 @@ Material:
     - _DetectColor_2: {r: 1, g: 0, b: 0, a: 1}
     - _DetectColor_3: {r: 0, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _OverlayColor_1: {r: 0, g: 0.6800317, b: 0.754717, a: 1}
-    - _OverlayColor_2: {r: 1, g: 0.59229463, b: 0, a: 1}
-    - _OverlayColor_3: {r: 1, g: 0, b: 0, a: 0}
+    - _OverlayColor_1: {r: 0.11698109, g: 0.9290432, b: 1, a: 1}
+    - _OverlayColor_2: {r: 1, g: 1, b: 1, a: 1}
+    - _OverlayColor_3: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
