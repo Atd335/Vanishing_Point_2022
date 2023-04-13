@@ -27,6 +27,6 @@ MonoBehaviour:
   errorWindow: {fileID: 0}
   content: {fileID: 11400000, guid: 063b8d7e3c6d5b64eb40ff8bf25383b4, type: 2}
   positionOverride: {x: -1, y: -1}
-  windowPosition: {x: 100, y: 100}
+  windowPosition: {x: 100, y: 750}
   windowScale: {x: 500, y: 500}
   level: -1
