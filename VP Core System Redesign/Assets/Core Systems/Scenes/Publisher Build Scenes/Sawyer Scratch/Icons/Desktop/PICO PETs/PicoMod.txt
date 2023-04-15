@@ -1,1 +1,21 @@
-Here is a comprehensive guide on modding Pico Pets
+Eloise’s total guide to Pico modding (copywrite picohead95)
+
+The official PicoPets company doesn’t technicallyyyyy want people to do this but as everyone here knows it’s so easy and super fun. There’s a lot of steps involved so I am trying to break it down step by step and hopefully it makes sense. thanx for reading!!!
+
+STEP 1
+The first step is to turn it upside down and open up the battery thing. It’s pretty easy to get into the Pico brain from there and it doesn’t take too much work to open up. 
+
+STEP 2
+Next you have to unscrew the two tiny screws with one of those little screwdrivers that they have in toolboxes, cuz they don’t come with it (I think we should send PicoPets a letter saying to release a kit with tools for modding!! comment if you agree *o*)
+
+STEP 3
+When you get the screws out you can take out the battery part, but be careful!! Don’t break the wires or it won’t work you’ll have to do something with the wires to fix it. But if you don’t break them they should be attached to the brain. DOESN’T WORK ON DUOS AND MICROS they’re too small and they have a different battery box which I don’t know how to mod yet but I’ll make a new guide once I figure it out 0_o
+
+STEP 4
+Get the brain out and you’ll actually see there’s a port for a firewire wire that you can plug stuff into your computer.
+
+STEP 5
+Plug it into your computer and there should be a thing that comes up that has a text file with the code that the Pico brain runs!! the language is a little weird cuz its for controlling the motors and stuff instead of a program but there are some other good guides to how it works online.
+
+STEP 6
+That’s pretty much it and please read the other guides about coding. There’s also cool ones about modding the actual Picos body so definitely look at those too!! :^)

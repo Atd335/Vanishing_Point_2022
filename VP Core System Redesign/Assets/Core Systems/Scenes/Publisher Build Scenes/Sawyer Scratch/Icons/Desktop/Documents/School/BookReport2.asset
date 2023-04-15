@@ -20,13 +20,13 @@ MonoBehaviour:
   isLocked: 0
   openWindowOnStart: 0
   limitToOneInstance: 1
-  autoPlace: 1
+  autoPlace: 0
   glitchIcon: 0
   islevelPortal: 0
   window: {fileID: 806539659856732665, guid: 1d2ad385062e60649b8b83c991ecc0a9, type: 3}
   errorWindow: {fileID: 0}
   content: {fileID: 4900000, guid: d03877bb8b9f5354090cb5da7daa9e72, type: 3}
-  positionOverride: {x: -1, y: -1}
-  windowPosition: {x: 100, y: 100}
+  positionOverride: {x: 165, y: -75}
+  windowPosition: {x: 100, y: 750}
   windowScale: {x: 500, y: 500}
   level: -1
