@@ -1023,7 +1023,7 @@ CharacterController:
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
-  m_SkinWidth: 0.08
+  m_SkinWidth: 0.0001
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5948409223450975946
@@ -1757,6 +1757,7 @@ GameObject:
   - component: {fileID: 5948409224324296989}
   - component: {fileID: 5948409224324296962}
   - component: {fileID: 5948409224324296963}
+  - component: {fileID: 4691649139031886690}
   m_Layer: 0
   m_Name: UpdateContoller
   m_TagString: Untagged
@@ -2046,6 +2047,18 @@ MonoBehaviour:
   musicVolume: 1
   SFXVolume: 1
   speechVolume: 1
+--- !u!114 &4691649139031886690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5948409224324296967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20cafb2dcb4fddc4f8a2c7e5f7ae8e91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5948409224356441303
 GameObject:
   m_ObjectHideFlags: 0

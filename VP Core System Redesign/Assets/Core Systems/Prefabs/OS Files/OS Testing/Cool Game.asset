@@ -18,6 +18,7 @@ MonoBehaviour:
   icon: {fileID: -5177388603050735206, guid: d51b5c6ba4b105549bf61d088f2587b9, type: 3}
   isLocked: 0
   limitToOneInstance: 1
+  autoPlace: 1
   window: {fileID: 0}
   content: {fileID: 0}
   positionOverride: {x: 100, y: 100}

@@ -24,4 +24,6 @@ public class ApplyEffectToCamera : MonoBehaviour
 
         UpdateDriver.ud.GetComponent<OverlayController>().raw.texture = RT_OVERLAY;
     }
+
+
 }

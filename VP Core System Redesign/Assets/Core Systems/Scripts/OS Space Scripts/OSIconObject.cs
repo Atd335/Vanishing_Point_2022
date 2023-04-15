@@ -16,11 +16,11 @@ public class OSIconObject : MonoBehaviour
     public TextMeshProUGUI tmp;
     public GameObject window;
     public GameObject lastWindowSpawned;
+    public GameObject taskBarTab;
     public Object content;
 
     public bool highlighted;
     public bool onlySpawnOne;
-
 
     private void OnValidate()
     {
@@ -37,6 +37,9 @@ public class OSIconObject : MonoBehaviour
         oscr = OSCanvasRaycaster.oscr;
         oscr.onClick.AddListener(onClick);
         oscr.onHold.AddListener(onHold);
+
+        if (file.openWindowOnStart) { openWindow(); }
+        //print(file.level);
     }
 
     void onClick()
@@ -46,7 +49,7 @@ public class OSIconObject : MonoBehaviour
             if (highlighted)
             {
                 print($"Opening {this.gameObject.name}'s window");
-                openWindow();
+                openWindow();               
                 return;
             }
             highlighted = true;
@@ -64,12 +67,25 @@ public class OSIconObject : MonoBehaviour
         //if (highlighted) { rt.anchoredPosition = Input.mousePosition; }
     }
 
-    void openWindow()
+    void createTaskbarTab()
+    {
+        GameObject tab = Instantiate(taskBarTab, GameObject.FindGameObjectWithTag("TabContainer").transform);
+        tab.GetComponent<TaskBarTaskScript>().assignedWindow = lastWindowSpawned;
+        tab.GetComponentInChildren<TextMeshProUGUI>().text = tmp.text;
+        tab.name += $"[{tmp.text}]";
+        
+        //this is an insane way of finding the proper icon. you really need to have some array of icons that all of these prefabs pull from. 
+        tab.GetComponentsInChildren<Image>()[tab.GetComponentsInChildren<Image>().Length - 1].sprite = 
+            lastWindowSpawned.GetComponentsInChildren<Image>()[lastWindowSpawned.GetComponentsInChildren<Image>().Length - 1].sprite;
+    }
+
+    public void openWindow()
     {
         if (lastWindowSpawned != null && onlySpawnOne) { return; }
 
         GameObject win = Instantiate(window,oscr.appCanvas);
         BaseWindowController bwc = win.GetComponent<BaseWindowController>();
+        win.GetComponentInChildren<WindowTitleTag>().GetComponent<TextMeshProUGUI>().text = file.name;
         bwc.RT.anchoredPosition = file.windowPosition;
         bwc.RT.sizeDelta = file.windowScale;
         bwc.lockedRatioSize = rt.sizeDelta;
@@ -78,19 +94,50 @@ public class OSIconObject : MonoBehaviour
 
         highlighted = false;
         highlightIMG.enabled = (highlighted);
+
+        if (file.islevelPortal)
+        {
+            SceneLoaderEasy.sceneToLoad = file.level;
+            print($"setting level to {file.level}...");
+            win.AddComponent<TimedEvent>();
+            
+            var timedEventInst = win.GetComponent<TimedEvent>();
+            timedEventInst.time = 1.5f;
+            timedEventInst.timedEvent = new UnityEngine.Events.UnityEvent();
+            timedEventInst.timedEvent.AddListener(openErrorWindow);            
+        }
+
+        createTaskbarTab();
+    }
+
+    void openErrorWindow()
+    {
+        print("spawning error window...");
+        GameObject win = Instantiate(file.errorWindow, oscr.appCanvas);
+        BaseWindowController bwc = win.GetComponent<BaseWindowController>();
+        win.GetComponentInChildren<WindowTitleTag>().GetComponent<TextMeshProUGUI>().text = $"Error with {file.name}!";
+        bwc.RT.anchoredPosition = new Vector2((Screen.width / 2)- (bwc.RT.sizeDelta.x / 2), (Screen.height / 2)+(bwc.RT.sizeDelta.y/2));
+    }
+
+    void setLevelIndex()
+    {
+        SceneLoaderEasy.sceneToLoad = file.level;
     }
 
     public void updateIcon()
     {
         if (file != null)
-        {
+        {         
             tmp.text = file.name + file.extension;
             iconIMG.sprite = file.icon;
             content = file.content;
             this.gameObject.name = "ICON_" + tmp.text;
-            GetComponent<RectTransform>().anchoredPosition = file.positionOverride;
+            if (!file.autoPlace) { GetComponent<RectTransform>().anchoredPosition = file.positionOverride; }
             window = file.window;
             onlySpawnOne = file.limitToOneInstance;
+
+            if (file.glitchIcon) { GetComponent<ImageGlitchScript>().spriteArray = file.glitchedIcons; }
+            GetComponent<ImageGlitchScript>().enabled = file.glitchIcon;
         }
     }
 

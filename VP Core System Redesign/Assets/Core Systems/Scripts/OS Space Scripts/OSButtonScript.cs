@@ -15,21 +15,41 @@ public class OSButtonScript : MonoBehaviour
     public Color defaultColor;
     public Color hoveredColor;
     public Color clickedColor;
+    public float colorLerpSpeed = 10;
 
     OSCanvasRaycaster oscr;
     public UnityEvent clickEvent;
+    public UnityEvent releaseEvent;
+    public UnityEvent hoveredEvent;
+    public UnityEvent notHoveredEvent;
+
+    public Sprite swappedSprite;
+    Sprite defaultSprite;
+
 
     private void Start()
     {
         img = GetComponent<Image>();
         oscr = OSCanvasRaycaster.oscr;
         oscr.onClick.AddListener(onClick);
+        oscr.onRelease.AddListener(onRelease);
+        defaultSprite = img.sprite;
     }
 
     private void Update()
     {
-        if (this.gameObject == oscr.hoveredOBJ) { img.color = Color.Lerp(img.color, hoveredColor, Time.deltaTime * 10f); }
-        else { img.color = Color.Lerp(img.color, defaultColor, Time.deltaTime * 10f); }
+        if (this.gameObject == oscr.hoveredOBJ) 
+        { 
+            img.color = Color.Lerp(img.color, hoveredColor, Time.deltaTime * colorLerpSpeed); 
+            if (swappedSprite) { img.sprite = swappedSprite; }
+            hoveredEvent.Invoke();
+        }
+        else 
+        { 
+            img.color = Color.Lerp(img.color, defaultColor, Time.deltaTime * colorLerpSpeed);
+            if (swappedSprite) { img.sprite = defaultSprite; }
+            notHoveredEvent.Invoke();
+        }
     }
 
     void onClick()
@@ -38,6 +58,19 @@ public class OSButtonScript : MonoBehaviour
         img.color = clickedColor;
         clickEvent.Invoke();
     }
+
+    void onRelease()
+    {
+        if (oscr.hoveredOBJ != this.gameObject) { return; }
+        releaseEvent.Invoke();
+    }
+
+    #region closeApplication
+    public void closeApp()
+    {
+        Application.Quit();
+    }
+    #endregion
 
     #region Maximize Method
     Vector2 initSize;
@@ -298,5 +331,81 @@ public class OSButtonScript : MonoBehaviour
     }
     #endregion
 
+    #region Button hovered Methods
 
+    public void LerpToScale(string floatStr)
+    {
+        int x = int.Parse(floatStr.Split(',')[0]);
+        int y = int.Parse(floatStr.Split(',')[1]);
+        int spd = int.Parse(floatStr.Split(',')[2]);
+
+        GetComponent<Image>().rectTransform.sizeDelta = Vector2.Lerp(GetComponent<Image>().rectTransform.sizeDelta, new Vector2(x, y), Time.deltaTime * spd);
+    }
+
+    public void setGlowOpacity(float f)
+    {
+        opacity = f;
+    }
+    float opacity;
+    public void LerpImageTransparent(Image img)
+    {
+        img.color = Color.Lerp(img.color, new Color(img.color.r, img.color.g, img.color.b, opacity), Time.deltaTime * 10);
+    }
+
+    float txtLerpSpd;
+    float txtLerpOpacity;
+    public void setTextLerpSpd(float f)
+    {
+        txtLerpSpd = f;
+    }
+    public void setTextLerpOpacity(float f)
+    {
+        txtLerpOpacity = f;
+    }
+
+    public void lerpTextColor(TextMeshProUGUI text)
+    { 
+        text.color = Color.Lerp(text.color, new Color(text.color.r, text.color.g, text.color.b, txtLerpOpacity), Time.deltaTime * txtLerpSpd);
+    }
+
+    float txtCharacterSpacing;
+    public void setTextCharacterSpacing(float f)
+    {
+        txtCharacterSpacing = f;
+    }
+
+    public void lerpTextSpacing(TextMeshProUGUI text)
+    {
+        text.characterSpacing = Mathf.Lerp(text.characterSpacing, txtCharacterSpacing, Time.deltaTime * txtLerpSpd);
+    }
+
+    #endregion
+
+    #region Button click events
+    public void setScale(float scale)
+    {
+        GetComponent<Image>().rectTransform.sizeDelta = GetComponent<Image>().rectTransform.sizeDelta * scale;
+    }
+    #endregion
+
+    #region text methods
+    public TextMeshProUGUI optionalSetText;
+
+    public void setText(string str)
+    {
+        if (optionalSetText) { optionalSetText.text = str; }
+    }
+    #endregion
+
+    #region taskbar tab methods
+    public void focusWindow()
+    {
+        transform.parent.GetComponent<TaskBarTaskScript>().assignedWindow.transform.SetAsLastSibling();
+    }
+    #endregion
+
+    public void enableBios()
+    {
+        GameObject.FindGameObjectWithTag("BIOSCanvas").GetComponent<BIOSTransfer>().activate();
+    }
 }
