@@ -60,7 +60,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ditherPattern:
-        m_Texture: {fileID: 2800000, guid: 2f7c47e626530304a8420146543c0137, type: 3}
+        m_Texture: {fileID: 2800000, guid: e2dc8c0f313bd0a4c82a644c141a5d45, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -87,7 +87,7 @@ Material:
     - _intensity: 0.001
     - _saturation: 0.169
     - _scale: 54.8
-    - _speed: 4
+    - _speed: 0.71
     - _threshold: -0.5
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
