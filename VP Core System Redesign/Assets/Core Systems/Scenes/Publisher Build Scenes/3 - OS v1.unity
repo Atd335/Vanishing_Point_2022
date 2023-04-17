@@ -1689,7 +1689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iconPrefab: {fileID: 6451878140265695627, guid: 140263fd3ee9fbc41bf40495ccca7be8, type: 3}
   iconCanvas: {fileID: 0}
-  iconList: {fileID: 11400000, guid: 4445dd847545e1c4395564ee333f7676, type: 2}
+  iconList: {fileID: 11400000, guid: b6d35da8c481a6d46aa80b3d0eae132f, type: 2}
   autoPlace: 1
 --- !u!81 &1233789926
 AudioListener:
