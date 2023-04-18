@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34b14332eba0a6d43972436abd0ce866, type: 3}
+  m_Name: EmailList
+  m_EditorClassIdentifier: 
+  emails:
+  - {fileID: 4900000, guid: 67fbaf3759fb05d49973b155e0f0b05f, type: 3}
+  - {fileID: 4900000, guid: 5d249abcfed43ba4498dee732cd68c1b, type: 3}
+  - {fileID: 4900000, guid: 0d8d57f831a0ce94ab3c05cb9e3d03ad, type: 3}
+  - {fileID: 4900000, guid: 4fa31ed06cadbe24fae8541b937877a5, type: 3}
+  - {fileID: 4900000, guid: 6d1e445c52377444bb2f23857cf53a15, type: 3}
+  - {fileID: 4900000, guid: 103de963f7d349747a555a30f3b2258a, type: 3}
+  - {fileID: 4900000, guid: 7e42739fd2d6d614fa7b4e63909e4d62, type: 3}
+  - {fileID: 4900000, guid: 3a8266f03e45f9843929892553f46788, type: 3}
+  - {fileID: 4900000, guid: 1795d508116f144438e89f6bfa64a886, type: 3}

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a56daaa5158de1a479e146d8c43d9f5d, type: 3}
+  m_Name: TestSound
+  m_EditorClassIdentifier: 
+  name: TestSound
+  extension: .aud
+  fileType: 1
+  icon: {fileID: -2695285320802911687, guid: 85de1879123d63d4f9c967f783107c5f, type: 3}
+  glitchedIcons: []
+  isLocked: 1
+  openWindowOnStart: 0
+  limitToOneInstance: 1
+  autoPlace: 1
+  glitchIcon: 0
+  islevelPortal: 0
+  window: {fileID: 806539659856732665, guid: 8ee67077bebcc264c97354f18947a7f3, type: 3}
+  errorWindow: {fileID: 0}
+  content: {fileID: 8300000, guid: bdf2ebc15bb69834084b749e5b76d283, type: 3}
+  positionOverride: {x: -1, y: -1}
+  windowPosition: {x: 100, y: 100}
+  windowScale: {x: 500, y: 500}
+  level: -1
