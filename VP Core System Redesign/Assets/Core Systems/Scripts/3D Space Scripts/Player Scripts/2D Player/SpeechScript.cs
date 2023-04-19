@@ -21,10 +21,13 @@ public class SpeechScript : MonoBehaviour
 
     Image txtBox;
     public Image playerIcon;
+    public Sprite[] playerIcons;
     
     TextMeshProUGUI tmp;
     TextAnimator txtAnim;
     TextAnimatorPlayer txtAnimPlr;
+
+
 
     public void _Start()
     {
@@ -100,6 +103,7 @@ public class SpeechScript : MonoBehaviour
         txtAnimPlr.SetTypewriterSpeed(spd);
         txtAnimPlr.ShowText(constructedString);
         txtAnimPlr.StartShowingText();
+
         showingBox = true;
     }
 
@@ -112,6 +116,19 @@ public class SpeechScript : MonoBehaviour
         txtAnimPlr.SetTypewriterSpeed(obj.spd);
         txtAnimPlr.ShowText(constructedString);
         txtAnimPlr.StartShowingText();
+
+        switch (obj.speakingCharacter)
+        {
+            case EchoDialogueObject_3D.character.Eloise:
+                playerIcon.sprite = playerIcons[1];
+                break;
+            case EchoDialogueObject_3D.character.Echo:
+                playerIcon.sprite = playerIcons[0];
+                break;
+            default:
+                break;
+        }
+
         showingBox = true;
     }
 
