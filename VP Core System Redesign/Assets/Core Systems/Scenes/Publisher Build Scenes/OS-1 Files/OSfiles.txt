@@ -1,0 +1,36 @@
+Desktop
+	Documents
+		school >:^(
+			bookreport1.txt > Junie B. Jones book report with clip art and cool fonts
+			bookreport2.txt > Flat Stanley book report with clip art and cool fonts
+			bookreport3.txt > Goosebumps book report with clip art and cool fonts
+			DX030606_1.jpg > Photo of Eloise in front of science fair project
+	Pictures
+		New Folder
+			DX120304_1.jpg > Blurry photo of Eloise
+			DX120304_2.jpg > Blurry photo of Eloise
+			DX120304_3.jpg > Blurry photo of Eloise
+			DX120304_4.jpg > Blurry photo of Eloise
+			DX010205_1.jpg > Photo of concepts and designs for Echo [LEVEL ENTRY POINT]
+		New Folder1
+			[EMPTY]
+	PICO PETs
+		DX122605_1.jpg > Photo of a Pico Pet, taken the day after receiving several from Brent
+		DX122605_2.jpg > Photo of a Pico Pet, taken the day after receiving several from Brent
+		DX122605_3.jpg > Photo of a Pico Pet, taken the day after receiving several from Brent
+		DX122605_4.jpg > Photo of a Pico Pet, taken the day after receiving several from Brent
+		PicoMod.txt > Guide written by Eloise about modding Pico Pets
+		DX021206_1.jpg > Photo of one of Eloise's modded Pico Pets, taken several months after first getting them
+		DX021206_2.jpg > Photo of one of Eloise's modded Pico Pets, taken several months after first getting them
+		UltraPet.jpg > Pico Pet fan art done by Eloise using the Paint app, depicting the ideal modded Pico Pet
+	Image.jpg > Crazy Paint app drawing
+	Image1.jpg > Paint app drawing of Eloise alone at dinner table
+	pico.txt > Pico Pet wishlist
+	DX122104_1.jpg > Photo of Brent and Eloise at family computer
+	DX083004_1.jpg > Photo of Brent and Eloise's house
+	DX012306_3.jpg > Photo of Eloise in the house
+	Paint
+	Write
+	Email
+	IM [CUT]
+	PicoDigital [CUT]
