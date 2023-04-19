@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02e104ecfc339db40b436f9f68871444, type: 3}
+  m_Name: PicoPetsList
+  m_EditorClassIdentifier: 
+  files:
+  - {fileID: 11400000, guid: 25679060eaa1d674d8d6076234e88df0, type: 2}
+  - {fileID: 11400000, guid: 63257c550d8c93245b7c841d72bf7d52, type: 2}
+  - {fileID: 11400000, guid: bb21181d0a77f7e44b4646faa1735bd3, type: 2}
+  - {fileID: 11400000, guid: 71adedb4ce70f864e913e20dc41fbbde, type: 2}
+  - {fileID: 11400000, guid: 2d94121b20c55a04094e7403f6794af0, type: 2}
+  - {fileID: 11400000, guid: 8fa27d8bb7c280d4c86b593ea1f30bfb, type: 2}
+  - {fileID: 11400000, guid: f6c6fb5bae2f6ba429fced86f5b0faf4, type: 2}
+  - {fileID: 11400000, guid: f25e25b10d3282c4c81c989cc2fb372a, type: 2}

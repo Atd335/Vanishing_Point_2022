@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a56daaa5158de1a479e146d8c43d9f5d, type: 3}
-  m_Name: DX010205_1
+  m_Name: DX122605_4
   m_EditorClassIdentifier: 
-  name: DX010205_1
+  name: DX122605_4
   extension: .img
   fileType: 2
-  icon: {fileID: 21300000, guid: b1a47fa22f14c6940be439938806c274, type: 3}
+  icon: {fileID: -7325009580034785316, guid: 85de1879123d63d4f9c967f783107c5f, type: 3}
   glitchedIcons: []
   isLocked: 0
   openWindowOnStart: 0
   limitToOneInstance: 1
   autoPlace: 0
-  glitchIcon: 1
-  islevelPortal: 1
-  window: {fileID: 806539659856732665, guid: 755d556ebd322dc4aba49ef289566304, type: 3}
-  errorWindow: {fileID: 806539659856732665, guid: 755d556ebd322dc4aba49ef289566304, type: 3}
-  content: {fileID: 0}
-  positionOverride: {x: 65, y: -175}
+  glitchIcon: 0
+  islevelPortal: 0
+  window: {fileID: 806539659856732665, guid: 7499708b8a0bbfa48b9763d4103b532f, type: 3}
+  errorWindow: {fileID: 0}
+  content: {fileID: 2800000, guid: e208f3a2bb002ac45b3b2ebd4d19ae10, type: 3}
+  positionOverride: {x: 165, y: -175}
   windowPosition: {x: 100, y: 750}
-  windowScale: {x: 500, y: 250}
+  windowScale: {x: 500, y: 500}
   level: -1

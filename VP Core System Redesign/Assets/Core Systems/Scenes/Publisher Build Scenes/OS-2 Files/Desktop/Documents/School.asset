@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a56daaa5158de1a479e146d8c43d9f5d, type: 3}
-  m_Name: DX010205_1
+  m_Name: School
   m_EditorClassIdentifier: 
-  name: DX010205_1
-  extension: .img
-  fileType: 2
-  icon: {fileID: 21300000, guid: b1a47fa22f14c6940be439938806c274, type: 3}
+  name: school >:^(
+  extension: 
+  fileType: 7
+  icon: {fileID: 2478563526431164712, guid: 85de1879123d63d4f9c967f783107c5f, type: 3}
   glitchedIcons: []
   isLocked: 0
   openWindowOnStart: 0
   limitToOneInstance: 1
-  autoPlace: 0
-  glitchIcon: 1
-  islevelPortal: 1
-  window: {fileID: 806539659856732665, guid: 755d556ebd322dc4aba49ef289566304, type: 3}
-  errorWindow: {fileID: 806539659856732665, guid: 755d556ebd322dc4aba49ef289566304, type: 3}
-  content: {fileID: 0}
-  positionOverride: {x: 65, y: -175}
+  autoPlace: 1
+  glitchIcon: 0
+  islevelPortal: 0
+  window: {fileID: 806539659856732665, guid: a777d77c8972e4044929752c211a99e7, type: 3}
+  errorWindow: {fileID: 0}
+  content: {fileID: 11400000, guid: b6feab580d3b0d346938501ab27c9387, type: 2}
+  positionOverride: {x: -1, y: -1}
   windowPosition: {x: 100, y: 750}
-  windowScale: {x: 500, y: 250}
+  windowScale: {x: 500, y: 500}
   level: -1

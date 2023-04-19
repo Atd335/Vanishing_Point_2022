@@ -15,13 +15,13 @@ MonoBehaviour:
   name: DX010205_1
   extension: .img
   fileType: 2
-  icon: {fileID: 21300000, guid: b1a47fa22f14c6940be439938806c274, type: 3}
+  icon: {fileID: -7325009580034785316, guid: 85de1879123d63d4f9c967f783107c5f, type: 3}
   glitchedIcons: []
   isLocked: 0
   openWindowOnStart: 0
   limitToOneInstance: 1
   autoPlace: 0
-  glitchIcon: 1
+  glitchIcon: 0
   islevelPortal: 1
   window: {fileID: 806539659856732665, guid: 755d556ebd322dc4aba49ef289566304, type: 3}
   errorWindow: {fileID: 806539659856732665, guid: 755d556ebd322dc4aba49ef289566304, type: 3}
