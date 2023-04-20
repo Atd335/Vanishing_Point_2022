@@ -11,6 +11,7 @@ public class EventOnOverlapWithPlayer : MonoBehaviour
     public bool fireOnce;
     private void Start()
     {
+
         cc2d = UpdateDriver.ud.GetComponent<CharacterController2D>();
     }
 

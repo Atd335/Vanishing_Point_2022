@@ -6,20 +6,23 @@ public class MusicScript : MonoBehaviour
 {
 
     public AudioSource AS;
+    public bool playOnStart;
 
+    public AudioClip song;
+    public float volume = 1;
 	public void _Start()
     {
         AS = this.gameObject.AddComponent<AudioSource>() as AudioSource;
         AS.loop = true;
-        if (UpdateDriver.ud.song != null)
+        if (playOnStart)
         {
-            AS.clip = UpdateDriver.ud.song;
+            AS.clip = song;
             AS.Play();
         }
     }
 
     public void _Update()
     {
-        
+        AS.volume = volume;
     }
 }
