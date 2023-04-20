@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Paint
   extension: .exe
   fileType: 10
-  icon: {fileID: 1757228953237565021, guid: 85de1879123d63d4f9c967f783107c5f, type: 3}
+  icon: {fileID: 3286163911610860551, guid: c7c89caa9168b4f48aecf92dae8560e8, type: 3}
   glitchedIcons: []
   isLocked: 0
   openWindowOnStart: 0

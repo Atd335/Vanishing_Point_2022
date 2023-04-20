@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Documents
   extension: 
   fileType: 7
-  icon: {fileID: 2478563526431164712, guid: 85de1879123d63d4f9c967f783107c5f, type: 3}
+  icon: {fileID: 3286163911610860551, guid: 7c51b292e7691fa48838fa70a494ebfa, type: 3}
   glitchedIcons: []
   isLocked: 1
   openWindowOnStart: 0

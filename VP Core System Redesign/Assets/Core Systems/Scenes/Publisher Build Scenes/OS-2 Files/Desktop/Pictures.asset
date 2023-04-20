@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Pictures
   extension: 
   fileType: 7
-  icon: {fileID: 2478563526431164712, guid: 85de1879123d63d4f9c967f783107c5f, type: 3}
+  icon: {fileID: 3286163911610860551, guid: 7c51b292e7691fa48838fa70a494ebfa, type: 3}
   glitchedIcons: []
   isLocked: 0
   openWindowOnStart: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
   islevelPortal: 0
   window: {fileID: 806539659856732665, guid: a777d77c8972e4044929752c211a99e7, type: 3}
   errorWindow: {fileID: 0}
-  content: {fileID: 11400000, guid: eed018f2c8716bb4b99638f0e5678318, type: 2}
+  content: {fileID: 11400000, guid: a8ae0537334fdbc44bc791e77edcedd2, type: 2}
   positionOverride: {x: -1, y: -1}
   windowPosition: {x: 700, y: 700}
   windowScale: {x: 500, y: 500}

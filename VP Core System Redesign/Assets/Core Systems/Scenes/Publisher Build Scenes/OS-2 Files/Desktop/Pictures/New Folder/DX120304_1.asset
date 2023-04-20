@@ -15,7 +15,7 @@ MonoBehaviour:
   name: DX120304_2
   extension: .img
   fileType: 2
-  icon: {fileID: -7325009580034785316, guid: 85de1879123d63d4f9c967f783107c5f, type: 3}
+  icon: {fileID: 3286163911610860551, guid: c0eac1ca99b34b54fa70ea08e482715a, type: 3}
   glitchedIcons: []
   isLocked: 0
   openWindowOnStart: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
   islevelPortal: 0
   window: {fileID: 806539659856732665, guid: 7499708b8a0bbfa48b9763d4103b532f, type: 3}
   errorWindow: {fileID: 0}
-  content: {fileID: 2800000, guid: 09883bbe8d9f3c94e88270bc79db03e2, type: 3}
+  content: {fileID: 2800000, guid: 0f7aea94a275f7e4491a5ef68f45f398, type: 3}
   positionOverride: {x: 165, y: -75}
   windowPosition: {x: 100, y: 750}
   windowScale: {x: 500, y: 500}

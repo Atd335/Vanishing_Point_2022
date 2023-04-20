@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Email
   extension: .exe
   fileType: 6
-  icon: {fileID: 4849046526630251110, guid: 85de1879123d63d4f9c967f783107c5f, type: 3}
+  icon: {fileID: 3286163911610860551, guid: 78e6e8448cf0df841b61edafe0257b41, type: 3}
   glitchedIcons: []
   isLocked: 0
   openWindowOnStart: 0

@@ -15,7 +15,7 @@ MonoBehaviour:
   name: DX010205_1
   extension: .img
   fileType: 2
-  icon: {fileID: -7325009580034785316, guid: 85de1879123d63d4f9c967f783107c5f, type: 3}
+  icon: {fileID: 3286163911610860551, guid: c0eac1ca99b34b54fa70ea08e482715a, type: 3}
   glitchedIcons: []
   isLocked: 0
   openWindowOnStart: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
   autoPlace: 0
   glitchIcon: 0
   islevelPortal: 1
-  window: {fileID: 806539659856732665, guid: 755d556ebd322dc4aba49ef289566304, type: 3}
+  window: {fileID: 806539659856732665, guid: 7499708b8a0bbfa48b9763d4103b532f, type: 3}
   errorWindow: {fileID: 806539659856732665, guid: 755d556ebd322dc4aba49ef289566304, type: 3}
   content: {fileID: 0}
   positionOverride: {x: 65, y: -175}

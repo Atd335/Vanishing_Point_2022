@@ -15,7 +15,7 @@ MonoBehaviour:
   name: bookreport1
   extension: .txt
   fileType: 0
-  icon: {fileID: -295326887405222533, guid: 85de1879123d63d4f9c967f783107c5f, type: 3}
+  icon: {fileID: 3286163911610860551, guid: 42d39b0e134c0224987334b9ef4608af, type: 3}
   glitchedIcons: []
   isLocked: 0
   openWindowOnStart: 0
