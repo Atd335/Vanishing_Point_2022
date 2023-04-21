@@ -80,17 +80,17 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - _brightness: -0.29
-    - _contrast: 2.95
+    - _brightness: 0.1
+    - _contrast: 2.6
     - _ditherIntensity: 0.675
     - _ditherResolution: 1
     - _intensity: 0.001
-    - _saturation: 0.169
+    - _saturation: 0.15
     - _scale: 54.8
-    - _speed: 0.71
+    - _speed: 1.55
     - _threshold: -0.5
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _colorScreen: {r: 0.32156864, g: 0.26511478, b: 0.19607843, a: 1}
+    - _colorScreen: {r: 0.11320752, g: 0.084892295, b: 0.048486993, a: 1}
   m_BuildTextureStacks: []
