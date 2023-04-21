@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a56daaa5158de1a479e146d8c43d9f5d, type: 3}
-  m_Name: Image
+  m_Name: Trash
   m_EditorClassIdentifier: 
-  name: Image
-  extension: .img
-  fileType: 2
-  icon: {fileID: 3286163911610860551, guid: c0eac1ca99b34b54fa70ea08e482715a, type: 3}
+  name: Trash
+  extension: 
+  fileType: 7
+  icon: {fileID: 3286163911610860551, guid: 572d3b9d0c2355b40b43b1d22132c6e2, type: 3}
   glitchedIcons: []
   isLocked: 0
   openWindowOnStart: 0
   limitToOneInstance: 1
-  autoPlace: 1
+  autoPlace: 0
   glitchIcon: 0
   islevelPortal: 0
-  window: {fileID: 806539659856732665, guid: 7499708b8a0bbfa48b9763d4103b532f, type: 3}
+  window: {fileID: 806539659856732665, guid: a777d77c8972e4044929752c211a99e7, type: 3}
   errorWindow: {fileID: 0}
-  content: {fileID: 2800000, guid: c25ca3e2a22fc5540a34c81692632599, type: 3}
-  positionOverride: {x: -1, y: -1}
-  windowPosition: {x: 100, y: 750}
+  content: {fileID: 11400000, guid: faf7f623b3a3c40498179046ee3e4ca5, type: 2}
+  positionOverride: {x: 70, y: -900}
+  windowPosition: {x: 250, y: 750}
   windowScale: {x: 500, y: 500}
   level: -1
