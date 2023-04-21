@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Calculator
   extension: .exe
   fileType: 5
-  icon: {fileID: -3462006982115894295, guid: 85de1879123d63d4f9c967f783107c5f, type: 3}
+  icon: {fileID: 3286163911610860551, guid: 46c713ac0004aff48a6991c8ae65d072, type: 3}
   glitchedIcons: []
   isLocked: 1
   openWindowOnStart: 0

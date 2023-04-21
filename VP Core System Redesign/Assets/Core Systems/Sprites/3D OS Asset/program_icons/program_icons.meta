@@ -1,7 +1,13 @@
 fileFormatVersion: 2
-guid: a5872c38fca8d4c45a0d204e6fecb233
+<<<<<<< HEAD:VP Core System Redesign/Assets/Core Systems/Sprites/3D OS Asset/program_icons/blk_and_white/calculator greyscale vp.svg.meta
+guid: 9f01908e373e1c04582314466d126126
 ScriptedImporter:
   internalIDToNameTable: []
+=======
+guid: c2a55621af094d44180a93c35736b887
+folderAsset: yes
+DefaultImporter:
+>>>>>>> cb5ca8ee2b2d2194d62dc6f1c11ee36fc69dca0d:VP Core System Redesign/Assets/Core Systems/Sprites/3D OS Asset/program_icons/program_icons.meta
   externalObjects: {}
   serializedVersion: 2
   userData: 
@@ -50,6 +56,6 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 6bee37cd6ff742a42915214a9bfb3f8e
+      spriteID: 62ecc394876af4c47a03ee1f8c41980e
       internalID: 0
     PhysicsOutlines: []

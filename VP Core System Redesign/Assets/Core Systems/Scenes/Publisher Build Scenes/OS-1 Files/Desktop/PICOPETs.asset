@@ -15,7 +15,7 @@ MonoBehaviour:
   name: PICO PETs
   extension: 
   fileType: 7
-  icon: {fileID: 3286163911610860551, guid: 7c51b292e7691fa48838fa70a494ebfa, type: 3}
+  icon: {fileID: 3286163911610860551, guid: e27031f28f41f434bb2c4b7f14014d62, type: 3}
   glitchedIcons: []
   isLocked: 1
   openWindowOnStart: 0

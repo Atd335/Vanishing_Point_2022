@@ -25,8 +25,8 @@ MonoBehaviour:
   islevelPortal: 0
   window: {fileID: 806539659856732665, guid: 7499708b8a0bbfa48b9763d4103b532f, type: 3}
   errorWindow: {fileID: 0}
-  content: {fileID: 2800000, guid: e208f3a2bb002ac45b3b2ebd4d19ae10, type: 3}
+  content: {fileID: 2800000, guid: 712de49d72d453c48a981233923d59fd, type: 3}
   positionOverride: {x: 65, y: -75}
   windowPosition: {x: 100, y: 750}
-  windowScale: {x: 500, y: 500}
+  windowScale: {x: 500, y: 650}
   level: -1
