@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Documents
   extension: 
   fileType: 7
-  icon: {fileID: 2478563526431164712, guid: 85de1879123d63d4f9c967f783107c5f, type: 3}
+  icon: {fileID: 3286163911610860551, guid: 7c51b292e7691fa48838fa70a494ebfa, type: 3}
   glitchedIcons: []
   isLocked: 1
   openWindowOnStart: 0
@@ -27,6 +27,6 @@ MonoBehaviour:
   errorWindow: {fileID: 806539659856732665, guid: aa7da2247a92c5b4585fc7b8486f379d, type: 3}
   content: {fileID: 806539659856732665, guid: aa7da2247a92c5b4585fc7b8486f379d, type: 3}
   positionOverride: {x: -1, y: -1}
-  windowPosition: {x: 100, y: 750}
-  windowScale: {x: 500, y: 500}
+  windowPosition: {x: 500, y: 340}
+  windowScale: {x: 500, y: 125}
   level: -1
