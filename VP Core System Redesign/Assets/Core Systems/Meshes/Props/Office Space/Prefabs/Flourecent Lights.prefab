@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6363745305493618514}
   - component: {fileID: 6363745305493618515}
   - component: {fileID: 6363745305493618524}
+  - component: {fileID: 1106295035096577420}
   m_Layer: 0
   m_Name: Cylinder (3)
   m_TagString: Untagged
@@ -1825,6 +1826,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &1106295035096577420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363745305493618526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31edc915836798646a2f6c55a836a574, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customColor: {r: 0, g: 0, b: 0, a: 0}
+  color_2D: {r: 1, g: 1, b: 1, a: 1}
+  color_3D: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &6363745305598349769
 GameObject:
   m_ObjectHideFlags: 0
@@ -1839,6 +1855,7 @@ GameObject:
   - component: {fileID: 6363745305598349773}
   - component: {fileID: 6363745305598349774}
   - component: {fileID: 6363745305598349775}
+  - component: {fileID: 7058593307877250359}
   m_Layer: 0
   m_Name: Cylinder (4)
   m_TagString: Untagged
@@ -3650,6 +3667,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &7058593307877250359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363745305598349769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31edc915836798646a2f6c55a836a574, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customColor: {r: 0, g: 0, b: 0, a: 0}
+  color_2D: {r: 1, g: 1, b: 1, a: 1}
+  color_3D: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &6363745305630384196
 GameObject:
   m_ObjectHideFlags: 0
@@ -3699,6 +3731,7 @@ GameObject:
   - component: {fileID: 6363745305669547882}
   - component: {fileID: 6363745305669547883}
   - component: {fileID: 6363745305669547860}
+  - component: {fileID: 8373617639890014783}
   m_Layer: 0
   m_Name: Cylinder (5)
   m_TagString: Untagged
@@ -5510,6 +5543,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &8373617639890014783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363745305669547862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31edc915836798646a2f6c55a836a574, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customColor: {r: 0, g: 0, b: 0, a: 0}
+  color_2D: {r: 1, g: 1, b: 1, a: 1}
+  color_3D: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &6363745305718896838
 GameObject:
   m_ObjectHideFlags: 0
@@ -5617,6 +5665,7 @@ GameObject:
   - component: {fileID: 6363745306017726462}
   - component: {fileID: 6363745306017726463}
   - component: {fileID: 6363745306017726456}
+  - component: {fileID: 7427085236532985911}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -6064,3 +6113,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &7427085236532985911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6363745306017726458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31edc915836798646a2f6c55a836a574, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customColor: {r: 0, g: 0, b: 0, a: 0}
+  color_2D: {r: 1, g: 1, b: 1, a: 1}
+  color_3D: {r: 1, g: 1, b: 1, a: 1}

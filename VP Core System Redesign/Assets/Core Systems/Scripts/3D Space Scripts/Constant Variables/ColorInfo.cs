@@ -6,7 +6,7 @@ public class ColorInfo : MonoBehaviour
 {
     public static Color platformColor_3D = new Color(.6f,1,1,1);
     public static Color cutoutColor_3D = new Color(1,1,1,1);
-    public static Color damageColor_3D = new Color(1,0,0,1);
+    public static Color damageColor_3D = new Color(1,0.7f,0.7f,1);
 
     public static Color platformColor_2D = new Color(0,0,0,1);
     public static Color cutoutColor_2D = new Color(1,1,1,1);
