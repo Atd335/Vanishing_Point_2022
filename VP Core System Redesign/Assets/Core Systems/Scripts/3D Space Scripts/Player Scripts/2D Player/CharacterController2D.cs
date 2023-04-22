@@ -332,6 +332,14 @@ public class CharacterController2D : MonoBehaviour
         StartCoroutine(cameraShakeEnum(duration, magnitude));
     }
 
+    public void cameraShake(string parameters = ".1,.1")
+    {
+        float duration = float.Parse(parameters.Split(',')[0]);
+        float magnitude = float.Parse(parameters.Split(',')[1]);
+
+        StartCoroutine(cameraShakeEnum(duration, magnitude));
+    }
+
     IEnumerator cameraShakeEnum(float duration = .1f, float magnitude = .1f)
     {
         float timer = 0;
