@@ -9,4 +9,6 @@ public class EchoDialogueObject_3D : ScriptableObject
     public float spd = .75f;
     public float volume = .3f;
     public float pitch = 1.25f;
+    public character speakingCharacter;
+    public enum character { Eloise, Echo}
 }

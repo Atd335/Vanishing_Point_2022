@@ -451,6 +451,7 @@ GameObject:
   - component: {fileID: 5948409223083274141}
   - component: {fileID: 5948409223083274140}
   - component: {fileID: 5948409223083274143}
+  - component: {fileID: 6420913379711564416}
   m_Layer: 0
   m_Name: Visual Camera
   m_TagString: Visual Camera
@@ -595,6 +596,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+--- !u!114 &6420913379711564416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5948409223083274113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdbbfa0d5bee14ea1bb3a8762969e899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _blockSize: 20
+  _entropy: 0.75
+  _noiseContrast: 4
+  _velocityScale: 2
+  _diffusion: 0
+  _shader: {fileID: 4800000, guid: 998cec7a45d274e3995fbccf2c4480bf, type: 3}
 --- !u!1 &5948409223142283635
 GameObject:
   m_ObjectHideFlags: 0
@@ -1918,6 +1937,9 @@ MonoBehaviour:
   AS: {fileID: 0}
   phones: []
   playerIcon: {fileID: 1806449793672952901}
+  playerIcons:
+  - {fileID: 21300000, guid: 9de28cc2006bb1c4c8cfa875fe196b8b, type: 3}
+  - {fileID: 21300000, guid: e8f06bfe39a6d9d4dac74c90631748d8, type: 3}
 --- !u!114 &5948409224324296984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1937,8 +1959,14 @@ MonoBehaviour:
   bobTimer: 0
   bobSpd: 10
   bobMag: 0.05
+  footSteps:
+  - {fileID: 8300000, guid: c3d48d55c7ff89041a10fd6fa794a2ee, type: 3}
+  - {fileID: 8300000, guid: acc314b635444be45a48dd47b38b646b, type: 3}
+  - {fileID: 8300000, guid: f7270edf1b90f5e49ac7489b6de4043e, type: 3}
+  - {fileID: 8300000, guid: a23655ae94c2cef4eba455592ec630ed, type: 3}
   head: {fileID: 0}
   headmast: {fileID: 0}
+  blockMovement: 0
 --- !u!114 &5948409224324296985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1981,7 +2009,7 @@ MonoBehaviour:
   waitTime: 0.2
   validSwitch: 0
   forceFPSMode: 0
-  force2DMode: 1
+  force2DMode: 0
   onFPS:
     m_PersistentCalls:
       m_Calls: []

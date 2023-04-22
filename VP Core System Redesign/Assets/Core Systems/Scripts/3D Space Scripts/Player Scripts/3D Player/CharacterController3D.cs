@@ -13,10 +13,11 @@ public class CharacterController3D : MonoBehaviour
     public float bobSpd = 10f;
     public float bobMag = .05f;
 
-
     Vector3 moveDirection;
     Vector3 cameraRotation;
     Vector3 headPos;
+
+    public AudioClip[] footSteps;
 
     GameObject player3D;
     CharacterController CC;
@@ -80,6 +81,7 @@ public class CharacterController3D : MonoBehaviour
                 moveDirection.y = jumpHeight;
             }
 
+            playFootstepSounds();
         }
         else
         {
@@ -98,6 +100,22 @@ public class CharacterController3D : MonoBehaviour
         }
 
         CC.Move(moveDirection * playerSpd * Time.deltaTime);
+    }
+
+    float footStepTimer = 0;
+    float stepTime = .4f;
+    void playFootstepSounds()
+    {
+        //play footsteps on movement
+        if (new Vector2(moveDirection.x, moveDirection.z).magnitude > 0.1f)// if the player is moving and on the ground
+        {
+            footStepTimer += Time.deltaTime;
+            if (footStepTimer >= stepTime) 
+            {
+                UpdateDriver.ud.GetComponent<SFXScript>().playSFX(footSteps[Random.Range(0,footSteps.Length)],.06f);
+                footStepTimer = 0;
+            }
+        }
     }
 
     public void resetHeadPos()
