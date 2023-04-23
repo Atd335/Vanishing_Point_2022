@@ -27,7 +27,7 @@ public class AnimationStateController : MonoBehaviour
     public void _Update()
     {
         walking = Mathf.Abs(cc2d.moveDirection.x) > 0;
-        inAir = !(cc2d.isGrounded||cc2d.isGrounded2);
+        inAir = (cc2d.isInAir);
         paused = switcher.firstPerson || UpdateDriver.ud.GetComponent<DeveloperTools>().devModeEnabled;
 
         anim.SetBool("Walking",walking);

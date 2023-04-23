@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: ed590b7aa6c3c964bbe900b01ef582b1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - rawTexture: {fileID: 8400000, guid: d0e7981953da305459de2190f0aeb814, type: 2}
+  - rawTextureBuffer: {fileID: 8400000, guid: 4784f89f6d3e91d47954c797ff22a366, type: 2}
+  - displayTexture: {fileID: 8400000, guid: 3a1984405d1c4f94a9f34333a8b04f35, type: 2}
+  - displayTextureBuffer: {fileID: 8400000, guid: f0e6efdb80c5cd04c86b31a78d2b49c2, type: 2}
+  - RawDiffusionCalculationMat: {fileID: 2100000, guid: 14c75645b7a90ef4690677d19d527a6d, type: 2}
+  - ThresholdDisplayMat: {fileID: 2100000, guid: 71730a2b7e33187498b3ae895562c3cc, type: 2}
+  - ClearTextureMat: {fileID: 2100000, guid: 97b9ee22c1d237e44929c87bcc1a7125, type: 2}
+  - StampImageMat: {fileID: 2100000, guid: b9356a0d325266b41aac91f5dd3c00e9, type: 2}
+  - stampTexture: {fileID: 2800000, guid: 4e8b865a45d6e5346af8befa80a97228, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

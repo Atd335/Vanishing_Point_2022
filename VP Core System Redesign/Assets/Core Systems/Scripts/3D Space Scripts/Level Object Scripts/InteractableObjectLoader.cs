@@ -33,6 +33,6 @@ public class InteractableObjectLoader : MonoBehaviour
             mr.material = mat;
         }
 
-        print("2D object materials loaded...");
+        //print("2D object materials loaded...");
     }
 }

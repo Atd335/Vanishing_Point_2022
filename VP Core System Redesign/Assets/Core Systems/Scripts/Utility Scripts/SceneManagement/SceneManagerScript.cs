@@ -9,6 +9,8 @@ public class SceneManagerScript : MonoBehaviour
     public static int loadScreenIndex = -1;//set this to the index of the loading screen this should never change.
     //index is -1 because there is no loading screen as of yet. 
 
+    public static int nextOSIndex = 0;
+
     public static void setIndex(int index)
     {
         sceneToLoad = index;
