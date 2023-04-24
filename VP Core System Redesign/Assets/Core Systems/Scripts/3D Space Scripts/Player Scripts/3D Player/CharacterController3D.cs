@@ -118,6 +118,7 @@ public class CharacterController3D : MonoBehaviour
         }
     }
 
+    public void setPlayerSpd(float spd) { playerSpd = spd; }
     public void resetHeadPos()
     {
         head.localPosition = new Vector3(0,0.75f,0); 
@@ -146,25 +147,27 @@ public class CharacterController3D : MonoBehaviour
         StartCoroutine(InterpolateCharacterToPositionCoroutine(pos, spd));
     }
 
-    IEnumerator InterpolateCharacterToPositionCoroutine(Vector3 pos, float spd)
+    IEnumerator InterpolateCharacterToPositionCoroutine(Vector3 pos, float dur)
     {
         float timer = 0;
         Vector3 initPos = player3D.transform.position;
-
+        Vector3 headPos = head.localPosition;
         while (timer < 1)
         {
-            timer += Time.deltaTime * spd;
+            timer += Time.deltaTime / dur;
             timer = Mathf.Clamp(timer,0,1);
 
-            player3D.transform.position = Vector3.Lerp(initPos, pos, timer);
-
-            yield return new WaitForSeconds(Time.deltaTime);
+            player3D.transform.position = Vector3.Lerp(initPos, pos, interpolationCurve.Evaluate(timer));
+            head.transform.localPosition = Vector3.Lerp(headPos, new Vector3(0,.75f,0), interpolationCurve.Evaluate(timer));
+            yield return new WaitForEndOfFrame();
         }
     }
 
-    public void InterpolateCharacterToRotation(Vector3 rot, float spd = 5)
+    public AnimationCurve interpolationCurve;
+
+    public void InterpolateCharacterToRotation(Vector3 rot, float dur = 1)
     {
-        InterpolateCharacterToRotationCoroutine(rot,spd);
+        InterpolateCharacterToRotationCoroutine(rot, dur);
     }
 
     public void InterpolateCharacterToRotation(string posStr)
@@ -180,19 +183,19 @@ public class CharacterController3D : MonoBehaviour
         StartCoroutine(InterpolateCharacterToRotationCoroutine(rot, spd));
     }
 
-    IEnumerator InterpolateCharacterToRotationCoroutine(Vector3 rot, float spd)
+    IEnumerator InterpolateCharacterToRotationCoroutine(Vector3 rot, float dur)
     {
         float timer = 0;
         Vector3 initRot = head.rotation.eulerAngles;
 
         while (timer < 1)
         {
-            timer += Time.deltaTime * spd;
+            timer += Time.deltaTime / dur;
             timer = Mathf.Clamp(timer, 0, 1);
 
-            head.rotation = Quaternion.Lerp(Quaternion.Euler(initRot), Quaternion.Euler(rot), timer);
+            head.rotation = Quaternion.Lerp(Quaternion.Euler(initRot), Quaternion.Euler(rot), interpolationCurve.Evaluate(timer));
 
-            yield return new WaitForSeconds(Time.deltaTime);
+            yield return new WaitForEndOfFrame();
         }
     }
 }

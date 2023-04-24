@@ -2014,6 +2014,7 @@ MonoBehaviour:
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
   hoveredColor: {r: 1, g: 1, b: 1, a: 1}
   clickedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+  colorLerpSpeed: 10
   clickEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -2044,8 +2045,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  hoveredEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  notHoveredEvent:
+    m_PersistentCalls:
+      m_Calls: []
   swappedSprite: {fileID: 21300000, guid: 1dc716231784a4d48ba45908eb22b7e4, type: 3}
   calculator: {fileID: 0}
+  optionalSetText: {fileID: 0}
 --- !u!1 &1345231237
 GameObject:
   m_ObjectHideFlags: 0
@@ -2335,6 +2343,7 @@ MonoBehaviour:
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
   hoveredColor: {r: 1, g: 1, b: 1, a: 1}
   clickedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+  colorLerpSpeed: 10
   clickEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -2353,8 +2362,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  hoveredEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  notHoveredEvent:
+    m_PersistentCalls:
+      m_Calls: []
   swappedSprite: {fileID: 21300000, guid: 1dc716231784a4d48ba45908eb22b7e4, type: 3}
   calculator: {fileID: 0}
+  optionalSetText: {fileID: 0}
 --- !u!1 &1468443286
 GameObject:
   m_ObjectHideFlags: 0
@@ -2588,6 +2604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tex: {fileID: 0}
+  defaultNull: {fileID: 0}
 --- !u!1 &1613324558
 GameObject:
   m_ObjectHideFlags: 0
@@ -4201,7 +4218,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh19130
+  m_Name: pb_Mesh274686
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

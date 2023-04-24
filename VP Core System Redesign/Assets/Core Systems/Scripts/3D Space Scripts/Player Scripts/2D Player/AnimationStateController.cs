@@ -9,6 +9,7 @@ public class AnimationStateController : MonoBehaviour
     Animator anim;
     CharacterController2D cc2d;
     ModeSwitcher switcher;
+    SFXScript sfx;
 
     bool walking;
     bool inAir;
@@ -22,12 +23,13 @@ public class AnimationStateController : MonoBehaviour
         img = GameObject.FindGameObjectWithTag("AnimatedPlayer").GetComponent<Image>();
         cc2d = UpdateDriver.ud.GetComponent<CharacterController2D>();
         switcher = UpdateDriver.ud.GetComponent<ModeSwitcher>();
+        sfx = UpdateDriver.ud.GetComponent<SFXScript>();
     }
 
     public void _Update()
     {
         walking = Mathf.Abs(cc2d.moveDirection.x) > 0;
-        inAir = !(cc2d.isGrounded||cc2d.isGrounded2);
+        inAir = (cc2d.isInAir);
         paused = switcher.firstPerson || UpdateDriver.ud.GetComponent<DeveloperTools>().devModeEnabled;
 
         anim.SetBool("Walking",walking);
@@ -38,10 +40,11 @@ public class AnimationStateController : MonoBehaviour
         //----------------------------
         if (paused) { return; }
 
-        if (Input.GetButtonDown("Jump_2D")&&!inAir) { img.transform.localScale = new Vector3(.6f,1.2f,1); }
+        if (Input.GetButtonDown("Jump_2D")&&!inAir) { img.transform.localScale = new Vector3(.6f,1.2f,1); sfx.playSFX(sfx.clips[2]); }
         if (!inAir && !jumpTrigger)
         {
             img.transform.localScale = new Vector3(1.3f, .6f, 1);
+            sfx.playSFX(sfx.clips[3]);
             jumpTrigger = true;
         }
         else if (inAir)

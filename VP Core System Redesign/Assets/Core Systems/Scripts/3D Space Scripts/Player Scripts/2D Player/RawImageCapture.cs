@@ -15,7 +15,7 @@ public class RawImageCapture : MonoBehaviour
     public void _Start()
     {
         renderMat = new Material(Shader.Find("Unlit/Color"));
-        print($"RawImageCapture loaded onto Gameobject: '{this.gameObject.name}...'");
+        //print($"RawImageCapture loaded onto Gameobject: '{this.gameObject.name}...'");
     }
 
     private void OnRenderImage(RenderTexture src, RenderTexture dest)

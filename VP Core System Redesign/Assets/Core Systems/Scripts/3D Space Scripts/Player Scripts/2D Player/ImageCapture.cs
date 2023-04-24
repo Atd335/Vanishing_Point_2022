@@ -11,7 +11,7 @@ public class ImageCapture : MonoBehaviour
 	public void _Start()
     {      
         collisionCamera = GameObject.FindGameObjectWithTag("Collision Camera").GetComponent<Camera>();
-        print("Collision Camera Loaded...");
+        //print("Collision Camera Loaded...");
         raw = collisionCamera.gameObject.AddComponent<RawImageCapture>();
         raw.ic = this;
         raw._Start();

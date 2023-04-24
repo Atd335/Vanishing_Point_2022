@@ -1,0 +1,19 @@
+"Newspaper Glass":
+
+	# Script W/H = 960/540
+
+	# RT W/H = 1280/720
+
+	# CalcMat:
+
+	# W = 960
+
+	# H = 540
+
+	# dB = 1.46
+
+	# dA = .03
+
+	# f = .008
+
+	# k = .047

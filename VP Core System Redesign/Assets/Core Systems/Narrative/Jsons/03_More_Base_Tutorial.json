@@ -1,0 +1,88 @@
+{
+    "list": [
+        {
+            "characterPosition": {
+                "x": -11.328490257263184,
+                "y": 1.0001990795135499,
+                "z": 0.6015751361846924
+            },
+            "headRotation": {
+                "x": -0.03348930925130844,
+                "y": 0.23596207797527314,
+                "z": -0.008136948570609093,
+                "w": -0.9711510539054871
+            },
+            "description": "A disembodied interaction between Brent and Eloise drifts out of the room ahead (talk to Sawyer for asset)"
+        },
+        {
+            "characterPosition": {
+                "x": -15.334224700927735,
+                "y": 1.0001990795135499,
+                "z": 8.10082721710205
+            },
+            "headRotation": {
+                "x": 0.020360754802823068,
+                "y": -0.5935957431793213,
+                "z": 0.015025579370558262,
+                "w": 0.8043655157089233
+            },
+            "description": "(middle of first 2D screen grab) ECHO:\n\nThi□s □sn�t r□ght. We shou□dn�t be here. \r\n"
+        },
+        {
+            "characterPosition": {
+                "x": -26.160768508911134,
+                "y": 1.040148138999939,
+                "z": 14.994532585144043
+            },
+            "headRotation": {
+                "x": 0.02215903252363205,
+                "y": -0.9777041673660278,
+                "z": 0.13914811611175538,
+                "w": 0.15569721162319184
+            },
+            "description": "(on second 2D screen grab) ECHO:\n\nHi! I�m Echo� □□□ □�□ □□□□ □□ help� It looks like a file is corrupted.\r\n� Did you know� I can restore your file with the Agave Recovery Tool. \r\n□□□ □□□□�□□□□□ □□ □□□□□ □□ □□ �□ □□□□□ □□□ □□□ WASD keys to move me □□ �□ □□□□□!\r\n"
+        },
+        {
+            "characterPosition": {
+                "x": -26.05142593383789,
+                "y": 1.0570671558380128,
+                "z": 9.275980949401856
+            },
+            "headRotation": {
+                "x": 0.034434013068675998,
+                "y": -0.832073986530304,
+                "z": 0.05198533087968826,
+                "w": 0.5511487722396851
+            },
+            "description": "More collider-less office objects drift through this room. Could be semitransparent if you think the opaque mesh will be like, obtrusive or mess w/ the mechanic. Also no worries if it doesn't make the build we send to Rachel. "
+        },
+        {
+            "characterPosition": {
+                "x": -27.176231384277345,
+                "y": 1.0001990795135499,
+                "z": 6.150294780731201
+            },
+            "headRotation": {
+                "x": 0.30413785576820376,
+                "y": 0.5069267749786377,
+                "z": -0.1971329301595688,
+                "w": 0.7820896506309509
+            },
+            "description": "Art team has already been informed about this, but there are only two critical population fixes and both are in this room. The first is that these two keyboards next to each other under the floor and sticking out at different heights cause me a visceral, irrational, and indescribable anxiety\ni think the top one is fine because my brain reads it as tiles\nso maybe both or at least the bottom one just need to go a little further down into the ground so they are read as floor tiles"
+        },
+        {
+            "characterPosition": {
+                "x": -18.240781784057618,
+                "y": 1.4003969430923463,
+                "z": 14.312895774841309
+            },
+            "headRotation": {
+                "x": 0.12964454293251038,
+                "y": -0.015199720859527588,
+                "z": 0.0019875671714544298,
+                "w": 0.9914421439170837
+            },
+            "description": "Second critical population fix - this needs to be a single-parent computer family. It seems small but we really intentionally never reference Eloise's mom and I don't want players to think, even subconsciously, that there is an absent mom character. "
+        }
+    ]
+}

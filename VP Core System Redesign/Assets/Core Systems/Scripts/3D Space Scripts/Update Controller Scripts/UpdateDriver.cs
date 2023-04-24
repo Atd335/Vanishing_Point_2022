@@ -33,6 +33,11 @@ public class UpdateDriver : MonoBehaviour
     public AudioClip song;
     public EchoDialogueObject_3D[] dialogueObjs;
 
+    public int frameLimit;
+    public bool limitFrameRate;
+
+    public bool hidePlayer = false;
+
     void Awake()
     {
         ud = this;
@@ -49,7 +54,6 @@ public class UpdateDriver : MonoBehaviour
 
         cc3d = GetComponent<CharacterController3D>();
 
-        sfx = GetComponent<SFXScript>();
 
         music = GetComponent<MusicScript>();
 
@@ -62,10 +66,13 @@ public class UpdateDriver : MonoBehaviour
         overlay = GetComponent<OverlayController>();
 
         pause = GetComponent<PauseSettingsScript>();
+
+        sfx = GetComponent<SFXScript>();
+        TriggerStarts();
     }
 
     // Start is called before the first frame update
-    void Start()
+    void TriggerStarts()
     {
         objectLoader._Start();
         imgCapture._Start();
@@ -73,10 +80,10 @@ public class UpdateDriver : MonoBehaviour
         animStates._Start();
         speech._Start();
         cc3d._Start();
-        sfx._Start();
         music._Start();
         switcher._Start();
         overlay._Start();
+        sfx._Start();
 
         pause._Start();
 
@@ -88,6 +95,8 @@ public class UpdateDriver : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Application.targetFrameRate = (frameLimit * System.Convert.ToInt32(limitFrameRate)) + (0-System.Convert.ToInt32(limitFrameRate));
+
         if (!devTools.devModeEnabled)
         {
             if (!pause.gamePaused)
@@ -101,7 +110,7 @@ public class UpdateDriver : MonoBehaviour
             }
             pause._Update();
         }
-
+        music._Update();
         mouseEnabler._Update();
         devTools._Update();
     }

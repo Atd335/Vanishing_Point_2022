@@ -20,7 +20,7 @@ public class OverlayController : MonoBehaviour
     {
         if (switcher.firstPerson)
         {
-            raw.color = Color.Lerp(raw.color,new Color(1,1,1,.4f), Time.deltaTime * 10);
+            raw.color = Color.Lerp(raw.color,new Color(1,1,1,.2f), Time.deltaTime * 10);
             rawBG.color = Color.Lerp(rawBG.color,new Color(1,1,1,0), Time.deltaTime * 10);
         }
         else

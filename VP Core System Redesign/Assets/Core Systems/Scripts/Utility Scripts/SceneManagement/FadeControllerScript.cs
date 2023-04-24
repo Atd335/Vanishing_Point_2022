@@ -107,4 +107,9 @@ public class FadeControllerScript : MonoBehaviour
         if (col2 == transparentColor) { onTransparent.Invoke(); }
         else{ onOpaque.Invoke(); }
     }
+
+    public void flushTexture()
+    {
+        fadeIMG_Raw.texture = null;
+    }
 }

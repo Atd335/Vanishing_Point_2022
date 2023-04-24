@@ -8,11 +8,11 @@ public class BobScript : MonoBehaviour
 
     public float masterSpdMultiplier = 1;
 
-    public Vector3 axesMagnitude;
-    public Vector3 rotMagnitude;
-    public Vector3 axesSpeeds;
-    public Vector3 rotSpeeds;
-    
+    public Vector3 axesMagnitude = new Vector3(0,.1f,0);
+    public Vector3 rotMagnitude = new Vector3(0, 30, 15);
+    public Vector3 axesSpeeds = new Vector3(0, 1, 1);
+    public Vector3 rotSpeeds = new Vector3(0, .5f, .5f);
+
     Vector3 axesBob;
     Vector3 axesRot;
 

@@ -31,7 +31,7 @@ public class TimedEvent : MonoBehaviour
             this.gameObject.AddComponent<AudioSource>();
         }
 
-        GetComponent<AudioSource>().PlayOneShot(clip);
+        GetComponent<AudioSource>().PlayOneShot(clip,transform.localScale.z);
         
 
     }
