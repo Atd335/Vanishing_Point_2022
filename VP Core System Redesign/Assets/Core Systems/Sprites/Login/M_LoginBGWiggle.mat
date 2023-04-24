@@ -73,8 +73,8 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _PerlinIntensity: 0.5
-    - _PerlinOffsetX: 2.220184
-    - _PerlinOffsetY: 2.220184
+    - _PerlinOffsetX: 1.493976
+    - _PerlinOffsetY: 1.493976
     - _PerlinSize: 6
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1

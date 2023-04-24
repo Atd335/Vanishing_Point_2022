@@ -97,7 +97,7 @@ Material:
     - _UseUIAlphaClip: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.1830188, g: 1, b: 0.93481183, a: 1}
+    - _Color: {r: 0.6, g: 1, b: 1, a: 1}
     - _DetectColor_1: {r: 1, g: 1, b: 1, a: 1}
     - _DetectColor_2: {r: 1, g: 1, b: 1, a: 1}
     - _DetectColor_3: {r: 1, g: 1, b: 1, a: 1}
