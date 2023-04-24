@@ -12,4 +12,8 @@ public class TextureHolder : MonoBehaviour
         th = this;
         DontDestroyOnLoad(this.gameObject);
     }
+
+    private void Update()
+    {
+    }
 }

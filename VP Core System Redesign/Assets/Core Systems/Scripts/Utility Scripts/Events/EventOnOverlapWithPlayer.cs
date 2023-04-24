@@ -9,6 +9,7 @@ public class EventOnOverlapWithPlayer : MonoBehaviour
     public UnityEvent onOverlap;
     CharacterController2D cc2d;
     public bool fireOnce;
+    public bool mustBeGrounded;
     private void Start()
     {
         cc2d = UpdateDriver.ud.GetComponent<CharacterController2D>();
@@ -20,6 +21,7 @@ public class EventOnOverlapWithPlayer : MonoBehaviour
 
         if (cc2d.colliderAtPlayerPosition().collider.gameObject==this.gameObject && cc2d.isOnScreen)
         {
+            if(cc2d.isInAir && mustBeGrounded) { print("heh"); return; }
             onOverlap.Invoke();
             if (fireOnce) { Destroy(this); }
         }

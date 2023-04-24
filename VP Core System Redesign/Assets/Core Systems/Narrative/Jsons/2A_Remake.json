@@ -1,0 +1,102 @@
+{
+    "list": [
+        {
+            "characterPosition": {
+                "x": 1.418822169303894,
+                "y": 2.0000998973846437,
+                "z": -0.7844219207763672
+            },
+            "headRotation": {
+                "x": 0.03981233388185501,
+                "y": -0.7054051160812378,
+                "z": -0.03974679484963417,
+                "w": -0.7065683007240295
+            },
+            "description": "ECHO (on level load):\n\nHi! I’m Echo, and I’m here to help! It looks like a file is corrupted. \r\n💡 Did you know? I can restore your file with the Agave Recovery Wizard.\r\nUse left-click to place me in 3D space and the WASD keys to move me in 2D space! \n\n\nECHO (when the player toggles into 2D for the first time):\nGreat! When you’re ready, use left-click to toggle back into 3D mode. \r\n"
+        },
+        {
+            "characterPosition": {
+                "x": 12.452254295349121,
+                "y": 2.3750996589660646,
+                "z": -7.911272048950195
+            },
+            "headRotation": {
+                "x": 0.022422397509217264,
+                "y": -0.7097720503807068,
+                "z": 0.02261551469564438,
+                "w": 0.7037111520767212
+            },
+            "description": "ECHO:\n\nI’m trying to be optimistic here, El. \r\n"
+        },
+        {
+            "characterPosition": {
+                "x": 4.900890350341797,
+                "y": 2.0000998973846437,
+                "z": -11.553605079650879
+            },
+            "headRotation": {
+                "x": 0.013720789924263955,
+                "y": -0.7296643257141113,
+                "z": 0.014647271484136582,
+                "w": 0.683510959148407
+            },
+            "description": "ECHO:\n\nSure, you did just open the same file that crashed our computer last time. \r\n"
+        },
+        {
+            "characterPosition": {
+                "x": 8.375731468200684,
+                "y": 2.00010085105896,
+                "z": -20.443195343017579
+            },
+            "headRotation": {
+                "x": 0.03481428325176239,
+                "y": -0.8050031661987305,
+                "z": 0.0474734753370285,
+                "w": 0.5903424620628357
+            },
+            "description": "ECHO:\n\nYou know, the file that takes us to COVE. \r\n"
+        },
+        {
+            "characterPosition": {
+                "x": 15.951553344726563,
+                "y": 2.0000998973846437,
+                "z": -19.7767276763916
+            },
+            "headRotation": {
+                "x": -0.00516501534730196,
+                "y": -0.9932714700698853,
+                "z": 0.10483512282371521,
+                "w": -0.04893648624420166
+            },
+            "description": "ECHO:\n\nThe one part of the computer Brent never wanted me to see. \r\n"
+        },
+        {
+            "characterPosition": {
+                "x": 20.813072204589845,
+                "y": 2.0000994205474855,
+                "z": -16.617773056030275
+            },
+            "headRotation": {
+                "x": -0.0010120650986209512,
+                "y": -0.9986428618431091,
+                "z": 0.04753141105175018,
+                "w": -0.02126365713775158
+            },
+            "description": "ECHO:\n\nProbably because every time we come here, it damages the actual hardware, where I live.\r\n"
+        },
+        {
+            "characterPosition": {
+                "x": 20.846065521240236,
+                "y": 2.3750998973846437,
+                "z": -6.777812480926514
+            },
+            "headRotation": {
+                "x": 0.0026580209378153087,
+                "y": 0.9897382855415344,
+                "z": -0.01857146807014942,
+                "w": 0.14165519177913667
+            },
+            "description": "ECHO:\n\nLook around, El! This place is messed up! \r"
+        }
+    ]
+}

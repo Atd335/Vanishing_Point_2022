@@ -1,0 +1,144 @@
+{
+    "list": [
+        {
+            "characterPosition": {
+                "x": -18.378755569458009,
+                "y": 1.000199794769287,
+                "z": -13.306694030761719
+            },
+            "headRotation": {
+                "x": 0.03574203699827194,
+                "y": -0.04054182767868042,
+                "z": 0.0014511719346046448,
+                "w": 0.9985374808311462
+            },
+            "description": "COVE Presents"
+        },
+        {
+            "characterPosition": {
+                "x": -19.855144500732423,
+                "y": 1.000199794769287,
+                "z": -0.8521175384521484
+            },
+            "headRotation": {
+                "x": 0.03782317414879799,
+                "y": -0.6234895586967468,
+                "z": 0.03022095188498497,
+                "w": 0.7803313136100769
+            },
+            "description": "Vanishing Point"
+        },
+        {
+            "characterPosition": {
+                "x": -25.904462814331056,
+                "y": 1.0001999139785767,
+                "z": -8.795985221862793
+            },
+            "headRotation": {
+                "x": 0.0447218082845211,
+                "y": -0.6954970359802246,
+                "z": 0.043452199548482898,
+                "w": 0.7158184051513672
+            },
+            "description": "Disembodied, unintelligible voices of Brent and Eloise, "
+        },
+        {
+            "characterPosition": {
+                "x": -25.062124252319337,
+                "y": 1.0001999139785767,
+                "z": -7.4263529777526859
+            },
+            "headRotation": {
+                "x": 0.05030601844191551,
+                "y": -0.7129278779029846,
+                "z": 0.05141591653227806,
+                "w": 0.6975381970405579
+            },
+            "description": "Particles emitting from computer"
+        },
+        {
+            "characterPosition": {
+                "x": -30.21419906616211,
+                "y": 1.0001999139785767,
+                "z": -1.8316659927368165
+            },
+            "headRotation": {
+                "x": -0.09296101331710816,
+                "y": -0.8618006110191345,
+                "z": 0.4684070944786072,
+                "w": -0.17103475332260133
+            },
+            "description": "Platform texture on this file cabinet"
+        },
+        {
+            "characterPosition": {
+                "x": -34.82508850097656,
+                "y": 1.0001999139785767,
+                "z": -0.5740289688110352
+            },
+            "headRotation": {
+                "x": 0.35275799036026,
+                "y": -0.6447141170501709,
+                "z": 0.4426862597465515,
+                "w": 0.5137455463409424
+            },
+            "description": "Platform texture on this file cabinet"
+        },
+        {
+            "characterPosition": {
+                "x": -34.99126434326172,
+                "y": 1.0001999139785767,
+                "z": -0.891357421875
+            },
+            "headRotation": {
+                "x": -0.0000167088583111763,
+                "y": 0.9998154640197754,
+                "z": 0.019196461886167527,
+                "w": 0.0008702576160430908
+            },
+            "description": "Door moved here"
+        },
+        {
+            "characterPosition": {
+                "x": -35.37553787231445,
+                "y": 1.0001999139785767,
+                "z": -15.165599822998047
+            },
+            "headRotation": {
+                "x": 0.11292217671871185,
+                "y": -0.6553600430488586,
+                "z": 0.0999922901391983,
+                "w": 0.7401037812232971
+            },
+            "description": "File cabinet w/ platform texture added here (only if it won't interfere with the fake out & will be invisible when starting game)"
+        },
+        {
+            "characterPosition": {
+                "x": -10.800090789794922,
+                "y": 1.000199794769287,
+                "z": -16.571697235107423
+            },
+            "headRotation": {
+                "x": 0.193576380610466,
+                "y": 0.3422575891017914,
+                "z": -0.0722808986902237,
+                "w": 0.9166042804718018
+            },
+            "description": "hi I'm a filing cabinet and I have no collider"
+        },
+        {
+            "characterPosition": {
+                "x": -21.269142150878908,
+                "y": 1.000199794769287,
+                "z": -2.799899101257324
+            },
+            "headRotation": {
+                "x": 0.11969168484210968,
+                "y": 0.014319002628326416,
+                "z": -0.0017264485359191895,
+                "w": 0.9927064776420593
+            },
+            "description": "An object half-visible around this corner so it's clearer to players that the level continues this way "
+        }
+    ]
+}

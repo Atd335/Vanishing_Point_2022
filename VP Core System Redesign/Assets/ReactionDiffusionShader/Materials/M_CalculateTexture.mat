@@ -79,8 +79,8 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     - _dA: 1.46
-    - _dB: 0.03
-    - _f: 0.008
+    - _dB: 0.2
+    - _f: 0.01
     - _k: 0.047
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}

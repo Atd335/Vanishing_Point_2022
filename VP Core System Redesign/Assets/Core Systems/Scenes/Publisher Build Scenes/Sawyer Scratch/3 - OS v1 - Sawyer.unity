@@ -2196,11 +2196,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7790077027949092589, guid: 20f3ad4acee0c4e4eac392626d6a8658, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790077028011658788, guid: 20f3ad4acee0c4e4eac392626d6a8658, type: 3}
+      propertyPath: opaqueColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790077028011658788, guid: 20f3ad4acee0c4e4eac392626d6a8658, type: 3}
+      propertyPath: opaqueColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790077028011658788, guid: 20f3ad4acee0c4e4eac392626d6a8658, type: 3}
+      propertyPath: opaqueColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7790077028011658788, guid: 20f3ad4acee0c4e4eac392626d6a8658, type: 3}
       propertyPath: startTransparent
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790077028011658788, guid: 20f3ad4acee0c4e4eac392626d6a8658, type: 3}
+      propertyPath: transparentColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790077028011658788, guid: 20f3ad4acee0c4e4eac392626d6a8658, type: 3}
+      propertyPath: transparentColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790077028011658788, guid: 20f3ad4acee0c4e4eac392626d6a8658, type: 3}
+      propertyPath: transparentColor.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7790077028011658788, guid: 20f3ad4acee0c4e4eac392626d6a8658, type: 3}
       propertyPath: onOpaque.m_PersistentCalls.m_Calls.Array.size

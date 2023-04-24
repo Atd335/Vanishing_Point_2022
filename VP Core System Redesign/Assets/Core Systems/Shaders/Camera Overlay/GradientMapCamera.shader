@@ -98,7 +98,7 @@ float xy = rand(ipos + float2(1, 1));
 
 float2 smooth = smoothstep(0, 1, fpos);
 return lerp( lerp(o,  x, smooth.x), 
-            lerp(y, xy, smooth.x), smooth.y);
+    lerp(y, xy, smooth.x), smooth.y);
 }
 
 half3 AdjustContrast(half3 color, half contrast) {
@@ -107,7 +107,7 @@ return saturate(lerp(half3(0.5, 0.5, 0.5), color, contrast));
 
 float colorSaturation(float3 col)
 {
-    return distance(min(min(col.r, col.g), col.b), max(max(col.r, col.g), col.b));
+return distance(min(min(col.r, col.g), col.b), max(max(col.r, col.g), col.b));
 }
 
 float4 frag (Interpolators i) : SV_Target
@@ -123,6 +123,9 @@ float pattern = tex2D(_ditherPattern, ditherUV);
 
 float4 camRender = tex2D(_MainTex, uv);
 
+float camSaturation = (sign(colorSaturation(camRender.rgb) - _SaturationThreshold));
+camSaturation = clamp(camSaturation, 0, 1);
+    
 float n = (value_noise((uv + floor(_Time.y * _speed)) * _scale) - 0.5) * _intensity;
 
 // add our noise value to our uv coordinates when we sample the texture
@@ -134,18 +137,23 @@ float grayscale = dot(camWiggle, w);
 grayscale = AdjustContrast(grayscale, _contrast) + _brightness + (pattern * _ditherIntensity);
 
 float processed = clamp(grayscale, 0.05, 0.95);
-
+    grayscale += (1 - grayscale) * lerp(0, .85, camSaturation);
+    
 float3 gradientmap = tex2D(_colorGradient, float2(processed, 0.5));
 
 float3 saturationAdjusted = lerp(float3(grayscale, grayscale, grayscale), gradientmap, _saturation);
 
 float4 satColorScreen = float4(saturationAdjusted + _colorScreen, 1.0);
-    float camSaturation = (sign(colorSaturation(camRender.rgb) - _SaturationThreshold));
-    camSaturation = clamp(camSaturation,0,1);
+
     
-    //float4 saturatedColors = ((float4(1, 1, 1, 1) - camRender) * (1-camSaturation)) + (camRender);
-    float4 saturatedColors = camRender * camSaturation;
-    return satColorScreen + saturatedColors;
+float4 saturatedColors = ((float4(1, 1, 1, 1) - camRender) * (1-camSaturation)) + (camRender);
+//float4 saturatedColors = camRender * camSaturation;
+    
+    float vibranceModifier = 1;
+    vibranceModifier *= camSaturation;
+    vibranceModifier += 1;
+    
+return satColorScreen * saturatedColors * vibranceModifier;
 
 }
 ENDCG

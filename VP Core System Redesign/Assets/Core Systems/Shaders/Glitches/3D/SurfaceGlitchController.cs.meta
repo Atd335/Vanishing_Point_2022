@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 32f84e6a1fa35db4a8014807a64c29ea
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - surfaceGlitch: {fileID: 4800000, guid: 393836dbe5c4f65449e42475e0a7c7a0, type: 3}
+  - clip: {fileID: 8300000, guid: f32e14fa3840df449935ac48f9ba39c3, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

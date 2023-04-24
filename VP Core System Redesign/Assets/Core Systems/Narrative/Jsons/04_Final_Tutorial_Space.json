@@ -1,0 +1,46 @@
+{
+    "list": [
+        {
+            "characterPosition": {
+                "x": -25.986595153808595,
+                "y": 1.0230392217636109,
+                "z": -8.462279319763184
+            },
+            "headRotation": {
+                "x": -0.07227585464715958,
+                "y": -0.6575912833213806,
+                "z": 0.0636083111166954,
+                "w": -0.7471975684165955
+            },
+            "description": "ECHO:\nHi! I�m Echo�Echo�Echo�Echo�Echo�Echo�Echo�Echo�Echo�Echo�Echo�Echo�Echo�Echo�Echo�Echo�Echo�Echo�Echo�Echo� and I�m □□□□□□□□□.\r\n□□□ □□□□�□□□□□ □□ □□□□□ □□ □□ �□ □□□□□ □□□ □□□ WASD keys to move me □□ �□ □□□□□!"
+        },
+        {
+            "characterPosition": {
+                "x": -11.823905944824219,
+                "y": 1.0001981258392335,
+                "z": -5.100339412689209
+            },
+            "headRotation": {
+                "x": -0.05061183497309685,
+                "y": 0.1273271143436432,
+                "z": -0.006505755241960287,
+                "w": -0.9905473589897156
+            },
+            "description": "ECHO:\n\nHi! I’m Echo� and I’m here to help! It looks like a file is corrupted.\r\n� Did you know� I can restore your file with the Agave Recovery Wizard. \r\n□□□ □□□□�□□□□□ □□ □□□□□ □□ □□ �□ □□□□□ □□□ □□□ WASD keys to move me in 2D space!"
+        },
+        {
+            "characterPosition": {
+                "x": -6.258857727050781,
+                "y": 1.0000998973846436,
+                "z": 10.544973373413086
+            },
+            "headRotation": {
+                "x": -0.0013563744723796845,
+                "y": -0.9984757900238037,
+                "z": 0.0470864363014698,
+                "w": -0.028762146830558778
+            },
+            "description": "What happened� It fee□s like… I’ve been asleep for a long time. \r"
+        }
+    ]
+}

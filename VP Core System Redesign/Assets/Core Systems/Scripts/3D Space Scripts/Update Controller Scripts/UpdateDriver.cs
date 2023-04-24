@@ -54,7 +54,6 @@ public class UpdateDriver : MonoBehaviour
 
         cc3d = GetComponent<CharacterController3D>();
 
-        sfx = GetComponent<SFXScript>();
 
         music = GetComponent<MusicScript>();
 
@@ -68,6 +67,7 @@ public class UpdateDriver : MonoBehaviour
 
         pause = GetComponent<PauseSettingsScript>();
 
+        sfx = GetComponent<SFXScript>();
         TriggerStarts();
     }
 
@@ -80,10 +80,10 @@ public class UpdateDriver : MonoBehaviour
         animStates._Start();
         speech._Start();
         cc3d._Start();
-        sfx._Start();
         music._Start();
         switcher._Start();
         overlay._Start();
+        sfx._Start();
 
         pause._Start();
 

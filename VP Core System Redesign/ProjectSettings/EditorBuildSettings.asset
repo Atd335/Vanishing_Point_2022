@@ -9,6 +9,28 @@ EditorBuildSettings:
     path: Assets/Core Systems/Scenes/Demo [April 2023]/00_IntroTutorial.unity
     guid: 46208a44fe860d141876ade39aa03301
   - enabled: 1
-    path: Assets/Core Systems/Scenes/Publisher Build Scenes/1 - User Select.unity
+    path: Assets/Core Systems/Scenes/Demo [April 2023]/0.5_Login.unity
     guid: 1766c5f7963b73346b2142ac3de1288b
+  - enabled: 1
+    path: Assets/Core Systems/Scenes/Demo [April 2023]/01_Walk and Look Tutorial.unity
+    guid: 1a0852aeeb823db43996613c4279bf0b
+  - enabled: 1
+    path: Assets/Core Systems/Scenes/Demo [April 2023]/02_Switch Traversal Tutorial.unity
+    guid: 1a1c3f1aca2e5854a837ab452b869ca1
+  - enabled: 1
+    path: Assets/Core Systems/Scenes/Demo [April 2023]/03_More Base Tutorial.unity
+    guid: 8025124fd53e3044b92fdec1af523056
+  - enabled: 1
+    path: Assets/Core Systems/Scenes/Demo [April 2023]/04_Final Tutorial Space.unity
+    guid: eb2e94b6dc5070549a7ccfade67b423e
+  - enabled: 1
+    path: Assets/Core Systems/Scenes/Demo [April 2023]/2A Remake.unity
+    guid: a8905ea57613e4148b3de9fa2abef830
+  - enabled: 1
+    path: Assets/Core Systems/Scenes/Demo [April 2023]/1.5_LoadingScreen.unity
+    guid: 6226632bfee7b684cb57e47f433bc9ff
+  - enabled: 1
+    path: Assets/Core Systems/Scenes/Publisher Build Scenes/Sawyer Scratch/3 - OS
+      v1 - Sawyer.unity
+    guid: b0bb887fca42d074b96e61757da72d0a
   m_configObjects: {}

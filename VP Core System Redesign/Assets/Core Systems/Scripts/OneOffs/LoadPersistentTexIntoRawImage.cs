@@ -9,5 +9,6 @@ public class LoadPersistentTexIntoRawImage : MonoBehaviour
     {
         GetComponent<RawImage>().texture = TextureHolder.th.StoredTex;
         print("Attempted to load screencap");
+        Destroy(TextureHolder.th.gameObject);
     }
 }

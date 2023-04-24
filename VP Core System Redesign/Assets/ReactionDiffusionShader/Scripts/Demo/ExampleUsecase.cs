@@ -43,7 +43,7 @@ public class ExampleUsecase : MonoBehaviour
         {
             timer += Time.deltaTime / dur;
             timer = Mathf.Clamp(timer,0,1);
-            noise.noiseStrength = Mathf.Lerp(.6f,0,timer);
+            noise.noiseStrength = Mathf.Lerp(.6f,0.2f,timer);
             yield return new WaitForEndOfFrame();
         }
     }

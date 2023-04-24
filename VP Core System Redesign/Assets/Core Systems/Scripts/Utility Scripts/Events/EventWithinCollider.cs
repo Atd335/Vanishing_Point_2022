@@ -30,7 +30,7 @@ public class EventWithinCollider : MonoBehaviour
         if (IsInsideBoxCollider(GetComponent<BoxCollider>(), transformToCheckFor.position)&&!triggered&&canRunEvent)
         {
             colliderEvent.Invoke();
-            if (destroyOnTrigger) { Destroy(this.gameObject); }
+            if (destroyOnTrigger) { Destroy(this); }
             triggered = true;
         }
         else

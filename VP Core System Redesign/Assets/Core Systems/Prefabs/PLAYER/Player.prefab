@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: b2e1fb0e286c1f648a2a6abaf4751f9b, type: 3}
+  m_Texture: {fileID: 0}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -457,6 +457,7 @@ GameObject:
   - component: {fileID: 3947526427242593988}
   - component: {fileID: 7885167273199277239}
   - component: {fileID: 5855199817147930891}
+  - component: {fileID: 7762652402184575194}
   m_Layer: 0
   m_Name: Visual Camera
   m_TagString: Visual Camera
@@ -632,6 +633,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effectMaterial: {fileID: 2100000, guid: 2a121393dcddd0d4d94dd31e7c33fbe0, type: 2}
+  _ditherResolution: 2
+  _ditherIntensity: 0.446
+  _saturation: 0.39
+  _brightness: -0.33
+  _contrast: 1.92
+  _colorScreen: {r: 0.198, g: 0.155, b: 0.099, a: 1}
+  _scale: 54.8
+  _intensity: 0.001
+  _speed: 1.55
+  _SaturationThreshold: 0.1
 --- !u!114 &8595476436276707183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -700,6 +711,18 @@ MonoBehaviour:
   rdt: {fileID: 3947526427242593988}
   camTex: {fileID: 8595476436276707183}
   noise: {fileID: 7885167273199277239}
+--- !u!114 &7762652402184575194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5948409223083274113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf4271883012cc1479d53c2edd84fe2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5948409223142283635
 GameObject:
   m_ObjectHideFlags: 0
@@ -811,7 +834,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 20}
+  m_SizeDelta: {x: 10, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5948409223181757855
 CanvasRenderer:
@@ -1015,6 +1038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 58ef7644a7780f54faf4153829a6b5df, type: 2}
+  PlatformJiggleRate: {x: 0, y: 0}
 --- !u!1 &5948409223357586812
 GameObject:
   m_ObjectHideFlags: 0
@@ -2042,7 +2066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensitivity: 1
-  playerSpd: 6
+  playerSpd: 3
   jumpHeight: 1.3
   gravity: 6
   bobTimer: 0
@@ -2056,6 +2080,30 @@ MonoBehaviour:
   head: {fileID: 0}
   headmast: {fileID: 0}
   blockMovement: 0
+  interpolationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &5948409224324296985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2069,6 +2117,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AS: {fileID: 0}
+  clips:
+  - {fileID: 8300000, guid: 61404d14fbe776e4991624240be5d8b0, type: 3}
+  - {fileID: 8300000, guid: 3df32a8ddb5f71f46af464063c43785b, type: 3}
+  - {fileID: 8300000, guid: 312c11e8f3f184148a1be3aa34132bfa, type: 3}
+  - {fileID: 8300000, guid: 447d9c45e2cea6f499e71cd945c55414, type: 3}
+  - {fileID: 8300000, guid: ac7ce336afb3f0f45b14e0a4928636ed, type: 3}
 --- !u!114 &5948409224324296990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2082,7 +2136,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AS: {fileID: 0}
-  volumeMod: 1
 --- !u!114 &5948409224324296991
 MonoBehaviour:
   m_ObjectHideFlags: 0

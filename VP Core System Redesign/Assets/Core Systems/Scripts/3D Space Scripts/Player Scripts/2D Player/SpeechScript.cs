@@ -91,7 +91,7 @@ public class SpeechScript : MonoBehaviour
         int id = (int)$"{c}".ToUpper()[0];
         id -= 65;
         try {AS.PlayOneShot(phones[id]);}
-        catch (System.Exception){}
+        catch (System.Exception){ AS.PlayOneShot(phones[0]); }
     }
 
     public void Speak(string text, string app="offset", string eff= "wiggle a=0", float spd = .75f, float volume = .3f, float pitch = 1.25f)

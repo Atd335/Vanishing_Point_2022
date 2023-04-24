@@ -57,6 +57,17 @@ public class CharacterController2D : MonoBehaviour
     float inAirDistanceThreshold = 25;
     Vector2 lastGroundedPos;
 
+    public void change3DPos(string str)
+    {
+        Vector3 v;
+
+        v.x = float.Parse(str.Split(',')[0]);
+        v.y = float.Parse(str.Split(',')[1]);
+        v.z = float.Parse(str.Split(',')[2]);
+
+        switcher.setCheckpoint(v);
+        switcher.respawnAtCheckpoint();
+    }
     public void _Start()
     {
         ic = UpdateDriver.ud.GetComponent<ImageCapture>();
@@ -64,7 +75,16 @@ public class CharacterController2D : MonoBehaviour
         switcher = UpdateDriver.ud.GetComponent<ModeSwitcher>();
         cc3d = UpdateDriver.ud.GetComponent<CharacterController3D>();
 
-        visualCamera = GameObject.FindGameObjectWithTag("Visual Camera").GetComponent<Camera>();
+        
+        try
+        {
+            visualCamera = GameObject.FindGameObjectWithTag("Visual Camera").GetComponent<Camera>();
+        }
+        catch (System.Exception)
+        {
+            print("Visual Camera Improperly Layered");
+            visualCamera = Camera.main;
+        }
 
         pointer = GameObject.FindGameObjectWithTag("Pointer 2D").GetComponent<RectTransform>();
         pointerImage = pointer.gameObject.GetComponent<Image>();

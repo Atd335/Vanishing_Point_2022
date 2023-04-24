@@ -13,6 +13,9 @@ public class SceneLoaderEasy : MonoBehaviour
     }
     public void loadscene()
     {
+        //REMOVE THIS ASAP THIS IS NOT OKAY!!!!
+        if (SceneManager.GetActiveScene().buildIndex == 8) { SceneManager.LoadScene(6); return; }
+
         print(sceneToLoad);
         SceneManager.LoadScene(sceneToLoad);
     }

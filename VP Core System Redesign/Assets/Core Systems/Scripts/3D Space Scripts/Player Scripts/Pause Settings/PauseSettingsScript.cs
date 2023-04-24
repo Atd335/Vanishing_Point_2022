@@ -46,7 +46,7 @@ public class PauseSettingsScript : MonoBehaviour
 
         mouseSensitiviy = Mathf.Clamp(mouseSensitiviy,0.05f,4f);
         masterVolume = Mathf.Clamp(masterVolume,0,1);
-        musicVolume = Mathf.Clamp(musicVolume*music.volumeMod, 0,1);
+        musicVolume = Mathf.Clamp(musicVolume, 0,1);
         SFXVolume = Mathf.Clamp(SFXVolume, 0,1);
         speechVolume = Mathf.Clamp(speechVolume, 0,1);
 

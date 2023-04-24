@@ -1,0 +1,46 @@
+{
+    "list": [
+        {
+            "characterPosition": {
+                "x": -25.98931312561035,
+                "y": 1.000145673751831,
+                "z": -6.990059852600098
+            },
+            "headRotation": {
+                "x": -0.0008738463511690497,
+                "y": 0.03180253505706787,
+                "z": -0.000027804606361314654,
+                "w": -0.9994938373565674
+            },
+            "description": "After I finished the previous tutorial loop and before I got to this one, I saw the following series of error messages:\n\nAgave Recovery Wizard\r\n\r\nThe Agave Recovery Wizard is attempting to recover Echo.exe. \r\nDo not turn off your computer.\r\n\r\n[XXXXX->\t\t\t\t\t\t\t]\r\n\r\n\nThe progress bar gets to about 25% and then another dialog appears. \r\n\r\n\n⛔ Recovery failed. \r\n\r\nError 713: File(s) missing or corrupt. \r\n\r\nAgave will attempt to continue startup. Do not turn off your computer. \r\n\r\n\t\t\t\t\t\tOK\r\n\r\n\r\nLoading screen returns followed by the same Agave Recovery Wizard window. \r\n\r\n⚠️\n\n Startup cannot continue because of a problem at: \r\n\r\nC:\\Users\\Dad\\Documents\\Work\\Asphodel\\Echo.exe\r\n\r\nClick OK to open the Agave Recovery Wizard. \r\n\r\n"
+        },
+        {
+            "characterPosition": {
+                "x": -12.857013702392579,
+                "y": 1.000179409980774,
+                "z": 4.2763519287109379
+            },
+            "headRotation": {
+                "x": 0.01803862303495407,
+                "y": 0.27475792169570925,
+                "z": -0.005155619233846664,
+                "w": 0.9613304734230042
+            },
+            "description": "ECHO:\nIs □ny□ne there�"
+        },
+        {
+            "characterPosition": {
+                "x": -9.242733001708985,
+                "y": 1.0000998973846436,
+                "z": 8.024273872375489
+            },
+            "headRotation": {
+                "x": 0.05136341229081154,
+                "y": 0.6177692413330078,
+                "z": -0.0404917411506176,
+                "w": 0.7836347818374634
+            },
+            "description": "ECHO:\n\nHi� I’m Echo� □□□ □’□ □□□□ □□ help� It looks like a file is corrupted�\r\n� Did you know� □ □□□ □□□□□□□ □□□□ □□□□ □□□□□ □□□ □□□□□ □□□□□□□□ □□□□□□. \r\n□□□ □□□□�□□□□□ □□ □□□□□ □□ □□ �□ □□□□□ □□□ □□□ WASD keys to move me □□ �□ □□□□□!"
+        }
+    ]
+}

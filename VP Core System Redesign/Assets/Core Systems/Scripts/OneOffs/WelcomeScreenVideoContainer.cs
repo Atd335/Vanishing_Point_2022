@@ -21,8 +21,6 @@ public class WelcomeScreenVideoContainer : MonoBehaviour
 
     void Update()
     {
-
-
         timer += Time.deltaTime / fadeTime;
         timer = Mathf.Clamp(timer,0,1);
         GetComponentInChildren<RawImage>().color = Color.Lerp(Color.clear, Color.white, timer);

@@ -6,7 +6,6 @@ public class MusicScript : MonoBehaviour
 {
 
     public AudioSource AS;
-    public float volumeMod = 1;
 	public void _Start()
     {
         AS = this.gameObject.AddComponent<AudioSource>() as AudioSource;

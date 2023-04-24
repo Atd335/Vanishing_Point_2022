@@ -45,6 +45,10 @@ public class ModeSwitcher : MonoBehaviour
         {
             toggleMode();
         }
+        else if(Input.GetButtonDown("SwitchMode"))
+        {
+            UpdateDriver.ud.GetComponent<SFXScript>().playSFX(UpdateDriver.ud.GetComponent<SFXScript>().clips[4]);
+        }
     }
 
     public void forceMode2D(bool b)

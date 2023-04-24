@@ -29,4 +29,4 @@ MonoBehaviour:
   positionOverride: {x: 65, y: -175}
   windowPosition: {x: 100, y: 100}
   windowScale: {x: 500, y: 500}
-  level: -1
+  level: 6
