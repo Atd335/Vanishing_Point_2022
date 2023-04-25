@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1633986, g: 0.12908906, b: 0.10036067, a: 1}
+  m_IndirectSpecularColor: {r: 0.16339841, g: 0.12908903, b: 0.10036067, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -50701,6 +50701,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Json
       objectReference: {fileID: 0}
+    - target: {fileID: 1246578844640800914, guid: fed414f33e962fc4092b52e03ddf94be, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fed414f33e962fc4092b52e03ddf94be, type: 3}
 --- !u!4 &1389606325204908750
@@ -51633,6 +51637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AS: {fileID: 0}
+  clips: []
 --- !u!114 &4738949245881613945
 MonoBehaviour:
   m_ObjectHideFlags: 0

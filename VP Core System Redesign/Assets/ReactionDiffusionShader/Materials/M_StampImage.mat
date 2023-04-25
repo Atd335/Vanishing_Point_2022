@@ -76,7 +76,7 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _StampSize: 0.072884165
+    - _StampSize: 0.24519849
     - _TexHeight: 540
     - _TexWidth: 960
     - _Threshold: 0.5
@@ -87,5 +87,5 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DotPosition: {r: 420, g: 207, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _RelativeStampPosition: {r: 0.65222555, g: 0.2046787, b: 0, a: 0}
+    - _RelativeStampPosition: {r: 0.9063346, g: 0.31612808, b: 0, a: 0}
   m_BuildTextureStacks: []
