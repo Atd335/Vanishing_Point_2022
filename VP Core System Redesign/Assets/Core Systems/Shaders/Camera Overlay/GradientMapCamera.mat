@@ -88,7 +88,7 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     - _brightness: -0.33
-    - _contrast: 2
+    - _contrast: 1.92
     - _ditherIntensity: 0.446
     - _ditherResolution: 2
     - _intensity: 0.001
