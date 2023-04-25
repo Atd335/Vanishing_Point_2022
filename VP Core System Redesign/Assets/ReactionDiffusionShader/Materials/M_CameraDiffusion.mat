@@ -76,7 +76,7 @@ Material:
     - _MaskColorIntensity: 1
     - _Metallic: 0
     - _Mode: 0
-    - _NoiseStrength: 0.6
+    - _NoiseStrength: 0.2
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
@@ -92,6 +92,6 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DotPosition: {r: 605, g: 155, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _NoiseOffset: {r: 0.95437264, g: 0.1942923, b: 0, a: 0}
+    - _NoiseOffset: {r: 0.49057525, g: 0.5666211, b: 0, a: 0}
     - _UVOffset: {r: 0.003, g: -0.005, b: 0, a: 0}
   m_BuildTextureStacks: []

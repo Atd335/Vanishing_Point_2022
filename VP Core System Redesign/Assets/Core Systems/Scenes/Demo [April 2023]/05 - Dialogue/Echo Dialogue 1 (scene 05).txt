@@ -1,0 +1,3 @@
+Hi! I’m Echo, and I’m here to help! It looks like a file is corrupted. 
+Did you know? I can restore your file with the Agave Recovery Wizard.
+Use left-click to place me in 3D space and the WASD keys to move me in 2D space! 
