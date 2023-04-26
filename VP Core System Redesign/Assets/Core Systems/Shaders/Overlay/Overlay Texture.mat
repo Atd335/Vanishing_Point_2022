@@ -89,8 +89,8 @@ Material:
     - _Parallax: 0.02
     - _PerlinAmount: 0.1
     - _PerlinIntensity: 0.5
-    - _PerlinOffsetX: 0
-    - _PerlinOffsetY: 0
+    - _PerlinOffsetX: 1.0823952
+    - _PerlinOffsetY: 0.72159684
     - _PerlinSize: 2.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
