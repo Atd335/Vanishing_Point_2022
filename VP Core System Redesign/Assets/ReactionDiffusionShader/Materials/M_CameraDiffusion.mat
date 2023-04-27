@@ -92,6 +92,6 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DotPosition: {r: 605, g: 155, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _NoiseOffset: {r: 0.8391967, g: 0.643486, b: 0, a: 0}
+    - _NoiseOffset: {r: 0.38365668, g: 0.41117996, b: 0, a: 0}
     - _UVOffset: {r: 0.003, g: -0.005, b: 0, a: 0}
   m_BuildTextureStacks: []
